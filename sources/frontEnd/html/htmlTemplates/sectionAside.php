@@ -1,7 +1,7 @@
 <?php
 ?>
 
-<aside class="sectionAsideClass">
+<aside class="sectionAsideClass sectionAsideClassDebug">
 
     <h1>
         <?php

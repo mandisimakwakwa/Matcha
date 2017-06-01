@@ -12,6 +12,7 @@ require_once ServerRoot . "sources/backEnd/config/setup.php";
 require_once ServerRoot . "sources/backEnd/camagruDAO.php";
 require_once ServerRoot . "sources/backEnd/camagruDTO.php";
 require_once ServerRoot . "sources/backEnd/engines/sqlRequestHandler.php";
+require_once ServerRoot . "sources/backEnd/engines/phpRequestHandler.php";
 
 //HTML Template Controllers
 $headerTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/header.php";

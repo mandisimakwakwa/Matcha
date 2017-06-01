@@ -4,11 +4,26 @@
 $projectRoot = substr(getcwd(), 0, strpos(getcwd(), "sources"));
 require $projectRoot . 'sources/backEnd/controllers/relativePathController.php';
 
-ft_checkDatabaseLinking();
-ft_checkSetupLinking();
-ft_checkCamagruDAO();
-ft_checkCamagruDTO();
-ft_checksqlRequestHandler();
+//Session Start
+session_start();
+
+//Populate Check Page Type Session
+$_SESSION['checkPageName'] = ft_getFileName($_SERVER['PHP_SELF']);
+
+//Global Page Variables
+$checkPageName = $_SESSION['checkPageName'];
+
+//Debug Controller
+function ft_debugController()
+{
+
+    ft_checkDatabaseLinking();
+    ft_checkSetupLinking();
+    ft_checkCamagruDAO();
+    ft_checkCamagruDTO();
+    ft_checksqlRequestHandler();
+    ft_checkPHPRequestHandler();
+}
 ?>
 
 
@@ -21,12 +36,48 @@ ft_checksqlRequestHandler();
     <meta charset="UTF-8">
 
     <title>Camagru</title>
+
+    <!--Calling indexPage.css-->
+    <link rel="stylesheet"
+          href="sources/frontEnd/css/indexPage.css"
+          type="text/css"
+    >
+
+    <!--Calling main.css-->
+    <link rel="stylesheet"
+          href="sources/frontEnd/css/main.css"
+          type="text/css"
+    >
+
+    <!--Calling htmlRequestHandler-->
+    <script src="sources/backEnd/engines/htmlRequestHandler.js"
+            type="text/javascript"
+    ></script>
 </head>
 <body>
 
-<?php include $headerTemplate; ?>
-<?php include $sectionMain; ?>
-<?php include $sectionAside; ?>
-<?php include $footerTemplate; ?>
+<!--Wrapper Div-->
+<div class="bodyWrapperDebugDiv">
+
+    <?php
+
+    //Calling Header Div
+    include $headerTemplate;
+
+    if ($checkPageName == "index") {
+
+        //Calling Section Main Div
+        include $sectionMain;
+    } elseif ($checkPageName == "main") {
+
+        //Calling Section Main and Aside Div
+        include $sectionMain;
+        include $sectionAside;
+    }
+
+    //Calling Footer Div
+    include $footerTemplate;
+    ?>
+</div>
 </body>
 </html>

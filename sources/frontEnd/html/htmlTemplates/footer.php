@@ -1,7 +1,7 @@
 <?php
 ?>
 
-<footer class="footerClass">
+<footer class="footerClass footerClassDebug">
 
     <h1>
         <?php
