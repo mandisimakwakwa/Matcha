@@ -32,20 +32,6 @@ function ft_closeRegisterModal() {
     registrationFormObj.style.display = "";
 }
 
-/*
- //Remove Modal from an onclick anywhere outside modal
- var modalObj = document.getElementById('loginForm');
-
- // When the user clicks anywhere outside of the modal, close it
- modalObj = function(event) {
-
- console.log(event.target);
- if (event.target == modalObj) {
- modalObj.style.display = "none";
- }
- }*/
-
-
 /*Get Current Page Event Info*/
 
 function ft_sendHTTPRequest(httpRequestAction, httpPostActionParams, getFormParams) {
@@ -71,7 +57,7 @@ function ft_sendHTTPRequest(httpRequestAction, httpPostActionParams, getFormPara
 
 /*Get Login Form Info*/
 
-function ft_validateUserHttpSend() {
+function ft_validateUserLoginHttpSend() {
 
     //Get Data From Login Form Client-Side
     httpEmail = document.forms["loginForm"]["loginEmailInput"].value;
@@ -82,4 +68,12 @@ function ft_validateUserHttpSend() {
     //Session State is Login, Register, Profile etc..
     var params = {"httpEmail": httpEmail, "httpPassword": httpPassword, "SessionState": "LOGIN"};
     console.log(ft_sendHTTPRequest("POST", params, ""));
+}
+
+/*Get Registration Info*/
+
+function ft_validateUserRegistrationHttpSend() {
+
+    //Get Data From Registration Form Client-Side
+    httpEmail = document.forms['registrationForm']['registerEmailInput'].value;
 }

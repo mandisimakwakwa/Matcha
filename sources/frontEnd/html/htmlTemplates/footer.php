@@ -14,6 +14,6 @@
                         echo "Welcome to Camagru";
                     }
                 */ ?>
-        Footer
+        mmakwakw
     </h1>
 </footer>

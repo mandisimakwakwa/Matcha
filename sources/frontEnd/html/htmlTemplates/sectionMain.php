@@ -38,24 +38,25 @@ $checkPageName = $_SESSION['checkPageName'];
 
                 <input type="text"
                        placeholder="Please Enter Email"
-                       id="loginEmailInput"
-                >
+                       id="loginEmailInput">
 
                 <input type="password"
                        placeholder="Please Enter Password"
                        id="loginPasswordInput"
-                >
+                       required>
+
                 <br><br>
 
                 <div id="loginFormButtonsDivContainer">
 
-                    <button id="loginSubmintButton"
-                            onclick="ft_validateUserHttpSend()"
-                    >
+                    <button id="loginSubmitButton"
+                            onclick="ft_validateUserLoginHttpSend()">
                         Login
                     </button>
 
-                    <button id="cancelSubmitButton">
+                    <button id="cancelSubmitButton"
+                            onclick="ft_closeLoginModal()"
+                    >
 
                         Cancel
                     </button>
@@ -100,7 +101,7 @@ $checkPageName = $_SESSION['checkPageName'];
 
                 <input type="text"
                        placeholder="Please Enter Lucky Number"
-                       id="registerLuckNumber"
+                       id="registerLuckyNumber"
                 >
 
                 <input type="password"
@@ -116,8 +117,8 @@ $checkPageName = $_SESSION['checkPageName'];
 
                 <div id="registrationFormButtonsDivContainer">
 
-                    <button id="registrationSubmintButton"
-                            onclick="ft_validateUserHttpSend()"
+                    <button id="registrationSubmitButton"
+                            onclick="ft_validateUserRegistrationHttpSend()"
                     >
                         Submit
                     </button>
