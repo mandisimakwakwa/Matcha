@@ -55,3 +55,17 @@
 /*Style Registration Form*/
 
 /*Style Login Form*/
+
+/*Login Form Buttons Styling*/
+#loginFormButtonsDivContainer {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#cancelSubmintLoginButton {
+
+    background-color: red;
+}

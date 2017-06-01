@@ -17,6 +17,7 @@ $checkPageName = $_SESSION['checkPageName'];
     if ($checkPageName == 'main') {
     } elseif ($checkPageName == 'index') {
         ?>
+
         <!--Login Form Div-->
         <div id="loginFormDiv"
              class="modal sectionMainClassDebug"
@@ -28,26 +29,37 @@ $checkPageName = $_SESSION['checkPageName'];
                         &times;
                     </span>
 
-            <form class="modal-content sectionMainClassDebug">
+            <form class="modal-content sectionMainClassDebug"
+                  id="loginForm"
+                  method="post"
+            >
                 <label>
 
                     <b>Email</b>
                 </label>
                 <input type="text"
                        placeholder="Please Enter Email"
+                       id="loginEmailInput"
                 >
 
                 <label>
 
                     <b>Password</b>
                 </label>
-                <input type="text"
+                <input type="password"
                        placeholder="Please Enter Password"
+                       id="loginPasswordInput"
                 >
 
+                <div id="loginFormButtonsDivContainer">
+
+                    <button id="loginSubmintButton"
+                            onclick="ft_validateUserHttpSend()"
+                    >Login
+                    </button>
+                    <button id="cancelSubmintLoginButton">Cancel</button>
+                </div>
             </form>
-
-
         </div>
 
         <!--Login Button-->
