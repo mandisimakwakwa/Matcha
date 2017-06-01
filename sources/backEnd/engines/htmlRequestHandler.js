@@ -22,7 +22,14 @@ function ft_closeLoginModal() {
     var loginFormObj = document.getElementById('loginFormDiv');
 
     //Give Invisibility Styling
-    loginFormObj.style.display = "none";
+    loginFormObj.style.display = "";
+}
+
+function ft_closeRegisterModal() {
+
+    var registrationFormObj = document.getElementById('registrationFormDiv');
+
+    registrationFormObj.style.display = "";
 }
 
 /*
@@ -46,14 +53,16 @@ function ft_sendHTTPRequest(httpRequestAction, httpPostActionParams, getFormPara
     var xhttpRequest = new XMLHttpRequest();
 
     xhttpRequest.open(httpRequestAction, "sources/backEnd/engines/phpRequestHandler.php" + getFormParams, true);
-    xhttpRequest.setRequestHeader("Content-type", "application/json");
+    // xhttpRequest.setRequestHeader("Content-type", "application/json");
     xhttpRequest.onreadystatechange = function () {
+
         if (this.readyState === 4 && this.status === 200) {
             console.log(xhttpRequest.response);
-            var response = JSON.parse(xhttpRequest.responseText);
-            return response;
+            // var response = JSON.parse(xhttpRequest.responseText);
+            return xhttpRequest.response;
         }
     };
+
     if (getFormParams !== "")
         xhttpRequest.send();
     else
@@ -64,9 +73,13 @@ function ft_sendHTTPRequest(httpRequestAction, httpPostActionParams, getFormPara
 
 function ft_validateUserHttpSend() {
 
-    httpUsername = document.forms["loginForm"]["loginEmailInput"].value;
+    //Get Data From Login Form Client-Side
+    httpEmail = document.forms["loginForm"]["loginEmailInput"].value;
+
+    //Security Hash Password Implementation will be Applied Later in PHP
     httpPassword = document.forms["loginForm"]["loginPasswordInput"].value;
 
-    var params = {"username": httpUsername, "password": httpPassword, "REQ_TYPE": "LOGIN"};
+    //Session State is Login, Register, Profile etc..
+    var params = {"httpEmail": httpEmail, "httpPassword": httpPassword, "SessionState": "LOGIN"};
     console.log(ft_sendHTTPRequest("POST", params, ""));
 }

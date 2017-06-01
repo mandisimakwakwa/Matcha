@@ -3,7 +3,7 @@
 //DB Connection Config
 $DB_DSN = 'mysql:host=localhost';
 $DB_USER = 'root';
-$DB_PASSWORD = 'password';
+$DB_PASSWORD = 'httpPassword';
 $DB_NAME = 'Camagru';
 
 //Debug Connection to database.php

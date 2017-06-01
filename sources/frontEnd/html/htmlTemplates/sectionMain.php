@@ -3,14 +3,14 @@
 //Session Start
 session_start();
 
-//Populate Check Page Type Session
+//Initialize Check Page Type Session
 $_SESSION['checkPageName'] = ft_getFileName($_SERVER['PHP_SELF']);
 
 //Global Page Variables
 $checkPageName = $_SESSION['checkPageName'];
 ?>
 
-<main class="sectionMainClass sectionMainClassDebug">
+<main class="sectionMainClass">
 
     <?php
 
@@ -20,44 +20,45 @@ $checkPageName = $_SESSION['checkPageName'];
 
         <!--Login Form Div-->
         <div id="loginFormDiv"
-             class="modal sectionMainClassDebug"
+             class="modal"
         >
 
-                    <span class="close"
-                          onclick="ft_closeLoginModal()"
-                    >
-                        &times;
-                    </span>
+                                <span class="close"
+                                      onclick="ft_closeLoginModal()"
+                                >
+                                    &times;
+                                </span>
 
-            <form class="modal-content sectionMainClassDebug"
+            <form class="modal-content"
                   id="loginForm"
                   method="post"
             >
-                <label>
+                <h1>Login</h1>
+                <br><br>
 
-                    <b>Email</b>
-                </label>
                 <input type="text"
                        placeholder="Please Enter Email"
                        id="loginEmailInput"
                 >
 
-                <label>
-
-                    <b>Password</b>
-                </label>
                 <input type="password"
                        placeholder="Please Enter Password"
                        id="loginPasswordInput"
                 >
+                <br><br>
 
                 <div id="loginFormButtonsDivContainer">
 
                     <button id="loginSubmintButton"
                             onclick="ft_validateUserHttpSend()"
-                    >Login
+                    >
+                        Login
                     </button>
-                    <button id="cancelSubmintLoginButton">Cancel</button>
+
+                    <button id="cancelSubmitButton">
+
+                        Cancel
+                    </button>
                 </div>
             </form>
         </div>
@@ -72,7 +73,64 @@ $checkPageName = $_SESSION['checkPageName'];
         <!--Register Form Div-->
         <div id="registrationFormDiv"
              class="modal"
-        ></div>
+        >
+
+                        <span class="close"
+                              onclick="ft_closeRegisterModal()"
+                        >
+                                    &times;
+                                </span>
+
+            <form class="modal-content"
+                  id="registrationForm"
+                  method="post"
+            >
+                <h1>Register</h1>
+                <br><br>
+
+                <input type="text"
+                       placeholder="Please Enter Email"
+                       id="registerEmailInput"
+                >
+
+                <input type="text"
+                       placeholder="Please Enter Username"
+                       id="registerUsername"
+                >
+
+                <input type="text"
+                       placeholder="Please Enter Lucky Number"
+                       id="registerLuckNumber"
+                >
+
+                <input type="password"
+                       placeholder="Please Enter Password"
+                       id="registerPasswordInput"
+                       required>
+
+                <input type="password"
+                       placeholder="Please Confirm Password"
+                       id="registerConfirmPassword"
+                       required>
+                <br><br>
+
+                <div id="registrationFormButtonsDivContainer">
+
+                    <button id="registrationSubmintButton"
+                            onclick="ft_validateUserHttpSend()"
+                    >
+                        Submit
+                    </button>
+
+                    <button id="cancelSubmitButton"
+                            onclick="ft_closeRegisterModal()"
+                    >
+
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
 
         <!--Registration Button-->
         <button onclick="ft_showRegistrationModal()"

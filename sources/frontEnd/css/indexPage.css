@@ -54,6 +54,15 @@
 
 /*Style Registration Form*/
 
+/*Registration Form Button Styling*/
+#registrationFormButtonsDivContainer {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
 /*Style Login Form*/
 
 /*Login Form Buttons Styling*/
@@ -65,7 +74,7 @@
     flex-direction: row;
 }
 
-#cancelSubmintLoginButton {
+#cancelSubmitButton {
 
     background-color: red;
 }

@@ -10,7 +10,7 @@ $_SESSION['checkPageName'] = ft_getFileName($_SERVER['PHP_SELF']);
 $checkPageName = $_SESSION['checkPageName'];
 ?>
 
-<header class="headerClass headerClassDebug">
+<header class="headerClass">
 
     <h1>
         <?php

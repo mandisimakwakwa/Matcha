@@ -25,13 +25,13 @@ function ft_createUsersTableQuery($db_name)
 {
 
     $dbQuery = "CREATE TABLE IF NOT EXISTS users (
-                email VARCHAR(72) NOT NULL,
-                password VARCHAR(66),
+                httpEmail VARCHAR(72) NOT NULL,
+                httpPassword VARCHAR(66),
                 userName VARCHAR(30),
                 userID INT(8) NOT NULL AUTO_INCREMENT,
                 verificationStatus BOOLEAN,
                 PRIMARY KEY (userID),
-                UNIQUE (email, userName));";
+                UNIQUE (httpEmail, userName));";
     return $dbQuery;
 }
 

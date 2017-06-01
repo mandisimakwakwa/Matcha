@@ -13,6 +13,14 @@ $dbNameVariable = $GLOBALS['DB_NAME'];
 //Session Creator
 session_start();
 
+//HTTP User Name
+$_SESSION['httpUsername'] = "";
+//HTTP Email
+$_SESSION['httpEmail'] = "";
+//HTTP Password
+$_SESSION['httpPassword'] = "";
+//HTTP Recheck Password
+$_SESSION['httpReCheckPassword'] = "";
 //DB User Name
 $_SESSION['db_username'] = "";
 //DB Email
@@ -24,7 +32,7 @@ $_SESSION['db_picturelikes'] = "";
 //Header User Check
 $_SESSION['checkPageType'] = "";
 //Login Check
-$_SESSION['confirmLogin'] = "";
+$_SESSION['confirmLogin'] = "-1";
 
 //Get Connection
 function ft_getConnection($dsn, $user, $password)

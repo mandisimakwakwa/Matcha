@@ -24,6 +24,8 @@ function ft_debugController()
     ft_checksqlRequestHandler();
     ft_checkPHPRequestHandler();
 }
+
+//ft_debugController();
 ?>
 
 

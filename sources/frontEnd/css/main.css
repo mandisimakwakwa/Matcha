@@ -22,7 +22,7 @@ html, body {
     padding: 0;
     margin: 0;
     height: 98%;
-    border: green solid thick; /*Body Border Color green*/
+    /*border: green solid thick; !*Body Border Color green*!*/
 }
 
 /*Header Tag*/
@@ -94,11 +94,17 @@ button:hover {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: dodgerblue;
     height: 90%;
     width: 40%;
+}
+
+/*Make Header Text Nice*/
+.modal-content > h1 {
+
+    display: flex;
 }
 
 /* The Close Button */
@@ -106,6 +112,11 @@ button:hover {
     /* Position it in the top right corner outside of the modal */
     background-color: black;
     width: 10%;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Close button on hover */
@@ -137,4 +148,14 @@ button:hover {
     to {
         transform: scale(1)
     }
+}
+
+input[type=text], input[type=password] {
+
+    color: bisque;
+    padding: 5px 5px;
+    font-size: larger;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
 }
