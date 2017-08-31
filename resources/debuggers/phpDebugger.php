@@ -2,10 +2,10 @@
 
 //Setup Relative Root
 $projectRoot = substr(getcwd(), 0, strpos(getcwd(), "sources"));
-require $projectRoot . 'sources/backEnd/engines/controllers/phpPathController.php';
+require $projectRoot . 'sources/backEnd/engines/controllers/relativePathController.php';
 
     //Debug Controller
-    function ft_debugController() {
+    function ft_phpDebugController() {
 
         ft_checkDatabaseLinking();
         ft_checkSetupLinking();

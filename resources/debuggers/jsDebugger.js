@@ -1,14 +1,18 @@
-function ft_indexControllerDebugger() {
+//Debug
+function ft_jsDebugger() {
 
-    console.log("Index On");
+    console.log("JS Debugger On");
 }
 
-function ft_ajaxControllerDebugger() {
+//JS Debugger Call
+function ft_jsDebugController() {
 
-    console.log("Ajax On");
+    ft_indexHandlerDebugger();
+    // ft_mainHandlerDebugger();
+    ft_matchaHandlerDebugger();
+    ft_matchaControllerDebugger();
+    ft_ajaxControllerDebugger();
+    ft_jsDebugger();
 }
 
-function ft_variableDisplayContentDebugger(sourceContent) {
-
-    console.log(sourceContent);
-}
+// ft_jsDebugController();
