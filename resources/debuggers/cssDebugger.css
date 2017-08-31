@@ -4,6 +4,11 @@
     \\==========================//
 */
 
+    .bodyDebugClass {
+
+        border: thick solid black;
+        background-color: black;
+    }
 /*====================================================================================================================*/
 /*
     //==========================\\
@@ -11,6 +16,11 @@
     \\==========================//
 */
 
+    .headerDebugClass {
+
+        border: thick solid gold;
+        background-color: gold;
+    }
 /*====================================================================================================================*/
 /*
     //==========================\\
@@ -18,6 +28,47 @@
     \\==========================//
 */
 
+    .mainDebugClass {
+
+        border: thick solid red;
+        background-color: red;
+    }
+
+        .divDebugClassOne {
+
+            border: thick solid purple;
+            background-color: purple;
+        }
+
+        .divDebugClassTwo {
+
+            border: thick solid silver;
+            background-color: silver;
+        }
+
+        .divDebugClassThree {
+
+            border: thick solid white;
+            background-color: white;
+        }
+
+        .divDebugClassFour {
+
+            border: thick solid blue;
+            background-color: blue;
+        }
+
+        .divDebugClassFive {
+
+            border: thick solid deepskyblue;
+            background-color: deepskyblue;
+        }
+
+    .asideDebugClass {
+
+        border: thick solid yellow;
+        background-color: yellow;
+    }
 /*====================================================================================================================*/
 /*
     //==========================\\
@@ -25,6 +76,11 @@
     \\==========================//
 */
 
+    .footerDebugClass {
+
+        border: thick solid greenyellow;
+        background-color: greenyellow;
+    }
 /*====================================================================================================================*/
 /*
     //==========================\\
