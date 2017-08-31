@@ -19,6 +19,7 @@
         require_once ServerRoot . "sources/backEnd/engines/handlers/paginationPHPPageHandler.php";
         require_once ServerRoot . "sources/backEnd/engines/handlers/galleryPHPPageHandler.php";
         require_once ServerRoot . "sources/backEnd/engines/handlers/sqlPHPPageHandler.php";
+        require_once ServerRoot . "sources/backEnd/engines/handlers/emailPHPPageHandler.php";
 
     //require_once ServerRoot . "sources/backEnd/engines/engines/controllers/phpPathController.php";
         $headerTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/header.php";
