@@ -4,7 +4,7 @@
 $projectRoot = substr(getcwd(), 0, strpos(getcwd(), "sources"));
 require $projectRoot . 'sources/backEnd/engines/controllers/relativePathController.php';
 
-    function ft_checkPageUnitTest() {
+    function ft_checkPageUnitTests() {
 
         $testOne = ft_checkPage("index");
         $testTwo = ft_checkPage("main");
@@ -48,7 +48,7 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
 
     function ft_runUnitTests() {
 
-        $checkPageTest = ft_checkPageUnitTest();
+        $checkPageTest = ft_checkPageUnitTests();
         $getCurrentFilenameTest = ft_getCurrentFilename();
 
         $result = 1;
