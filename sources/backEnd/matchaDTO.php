@@ -16,13 +16,13 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
 
         if ($currentPage == "index") {
 
-            return "index";
+            return 1;
         } elseif ($currentPage == "main"){
 
-            return "main";
+            return 1;
         } else {
 
-            return "null";
+            return 0;
         }
     }
 ?>

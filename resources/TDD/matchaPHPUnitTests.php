@@ -4,45 +4,163 @@
 $projectRoot = substr(getcwd(), 0, strpos(getcwd(), "sources"));
 require $projectRoot . 'sources/backEnd/engines/controllers/relativePathController.php';
 
-    function ft_checkPageUnitTests() {
+    function ft_unitTests() {
 
-        $testOne = ft_checkPage("index");
-        $testTwo = ft_checkPage("main");
-        $testThree = ft_checkPage("null");
+        $passCount = 1;
 
-        $result = "pass";
+        for ($i = 0; $i < 5; $i++) {
 
-        if ($testOne == "index") {
+            switch ($i) {
 
-            return $result;
-        } elseif ($testTwo == "main") {
+                case 1:
+                    ft_testFunc("");
+                    $passCount += 1;
+                    break;
+                case 2:
+                    ft_testFunc("");
+                    $passCount += 1;
+                    break;
+                case 3:
+                    ft_testFunc("");
+                    $passCount += 1;
+                    break;
+                case 4:
+                    ft_testFunc("");
+                    $passCount += 1;
+                    break;
+                case 5:
+                    ft_testFunc("");
+                    $passCount += 1;
+                    break;
+            }
+        }
 
-            return $result;
-        } elseif ($testThree) {
+        if ($passCount == 5) {
 
-            return $result;
+            return 1;
         } else {
 
-            $result = "fail";
-
-            return $result;
+            return 0;
         }
     }
 
-    function ft_getCurrentFilenameUnitTest() {
+    function ft_checkPageUnitTests() {
 
-        $testOne = ft_getCurrentFilename();
+        $passCount = 1;
 
-        $result = "pass";
+        for ($i = 0; $i < 5; $i++) {
 
-        if ($testOne == "index" || $testOne == "main") {
+            switch ($i) {
 
-            return $result;
+                case 1:
+                    $result = ft_checkPage("index");
+
+                    if ($result) {
+
+                        $passCount += 1;
+                    }
+                    break;
+                case 2:
+                    $result = ft_checkPage("main");
+
+                    if ($result) {
+
+                        $passCount += 1;
+                    }
+                    break;
+                case 3:
+                    $result = ft_checkPage("null");
+
+                    if (!$result) {
+
+                        $passCount += 1;
+                    }
+                    break;
+                case 4:
+                    $result = ft_checkPage("errorText");
+
+                    if (!$result) {
+
+                        $passCount += 1;
+                    }
+                    break;
+                case 5:
+                    $result = ft_checkPage("errorText");
+
+                    if (!$result) {
+
+                        $passCount += 1;
+                    }
+                    break;
+            }
+        }
+
+        if ($passCount == 5) {
+
+            return 1;
         } else {
 
-            $result = "fail";
+            return 0;
+        }
+    }
 
-            return $result;
+    function ft_getCurrentFilenameUnitTests() {
+
+        $passCount = 1;
+
+        for ($i = 0; $i < 5; $i++) {
+
+            switch ($i) {
+
+                case 1:
+
+                    $result = ft_getCurrentFilename();
+                    if ($result == "index") {
+
+                        $passCount += 1;
+                    }
+                    break;
+                case 2:
+                    $result = ft_getCurrentFilename();
+
+                    if ($result == "main") {
+
+                        $passCount += 1;
+                    }
+                    break;
+                case 3:
+                    $result = ft_getCurrentFilename();
+
+                    if ($result != "null") {
+
+                        $passCount += 1;
+                    }
+                    break;
+                case 4:
+                    $result = ft_getCurrentFilename();
+
+                    if ($result != "errorText") {
+
+                        $passCount += 1;
+                    }
+                    break;
+                case 5:
+                    $result = ft_getCurrentFilename();
+
+                    if ($result != "errorText") {
+
+                        $passCount += 1;
+                    }
+                    break;
+            }
+        }
+
+        if ($passCount == 5) {
+
+            return 1;
+        } else {
+
+            return 0;
         }
     }
 
@@ -50,20 +168,5 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
 
         $checkPageTest = ft_checkPageUnitTests();
         $getCurrentFilenameTest = ft_getCurrentFilename();
-
-        $result = 1;
-
-        if ($checkPageTest == "pass") {
-
-            return $result;
-        } elseif ($getCurrentFilenameTest == "pass") {
-
-            return $result;
-        } else {
-
-            $result = 0;
-
-            return $result;
-        }
     }
 ?>
