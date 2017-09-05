@@ -11,7 +11,7 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
 
         try {
 
-            $counter = 0;
+            $passCounter = 0;
 
             //Test Sum
             $testSum = 2;
@@ -29,7 +29,7 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
 
             if ($expectedResult == $originalResult) {
 
-                $counter += 1;
+                $passCounter++;
             } else {
 
                 throw New Exception(ft_unitTestFailError($testNumber, $functionName, $functionLocation, $functionStartLine));
@@ -44,17 +44,22 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
             $functionStartLine = "Line 15";
 
             $originalResult = ft_checkPage("main");
-            $expectedResult = "mains";
+            $expectedResult = true;
 
             if ($expectedResult == $originalResult) {
 
-                $counter += 1;
+                $passCounter++;
             } else {
 
                 throw New Exception(ft_unitTestFailError($testNumber, $functionName, $functionLocation, $functionStartLine));
             }
 
-            if ($testSum == $counter) {
+            //Test Three
+                //Test Three goes here...
+
+            //Pass Check
+
+            if ($testSum == $passCounter) {
 
                 return true;
             }
