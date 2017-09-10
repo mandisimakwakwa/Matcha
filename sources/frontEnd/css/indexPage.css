@@ -18,6 +18,15 @@
     \\==========================//
 */
 
+    /* CSS syntax means div with class .bodyDivClass */
+    div.bodyDivClass {
+
+        background-color: sandybrown;
+        min-height: 100vh !important;
+        min-width: 100vw !important;
+        justify-content: center;
+        align-items: center;
+    }
 /*====================================================================================================================*/
 /*
     //==========================\\

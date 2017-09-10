@@ -11,6 +11,12 @@
         margin: 0;
         padding: 0;
     }
+
+    /* CSS Styling for forcing flex on all content children */
+    html, body * {
+
+        display: inherit;
+    }
 /*====================================================================================================================*/
 /*
     //==========================\\
@@ -25,13 +31,7 @@
     \\==========================//
 */
 
-    /* CSS syntax means div with class .bodyDivClass */
-    div.bodyDivClass {
 
-        background-color: black;
-        min-height: 100vh !important;
-        min-width: 100vw !important;
-    }
 /*====================================================================================================================*/
 /*
     //==========================\\
