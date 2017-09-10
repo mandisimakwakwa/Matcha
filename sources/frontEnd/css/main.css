@@ -7,9 +7,16 @@
     /* CSS Comma Separator means AND */
     html, body {
 
+        /* Display Layer */
         display: flex;
+
+        /* Dimensions */
         margin: 0;
         padding: 0;
+
+        /* Text Styles */
+        /* Color Styles */
+        /* Animation */
     }
 
     /* CSS Styling for forcing flex on all content children */

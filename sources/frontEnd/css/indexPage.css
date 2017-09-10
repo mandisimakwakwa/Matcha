@@ -22,10 +22,11 @@
     div.bodyDivClass {
 
         background-color: sandybrown;
-        min-height: 100vh !important;
-        min-width: 100vw !important;
         justify-content: center;
         align-items: center;
+        flex-flow: column;
+        min-height: 100vh !important;
+        min-width: 100vw !important;
     }
 /*====================================================================================================================*/
 /*

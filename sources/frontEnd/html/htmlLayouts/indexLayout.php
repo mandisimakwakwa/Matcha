@@ -19,6 +19,14 @@
               type="text/css"
         >
         <link rel="stylesheet"
+              href="sources/frontEnd/css/normalize.css"
+              type="text/css"
+        >
+        <link rel="stylesheet"
+              href="sources/frontEnd/css/boilerplate.css"
+              type="text/css"
+        >
+        <link rel="stylesheet"
               href="resources/debuggers/cssDebugger.css"
               type="text/css"
         >
