@@ -5,7 +5,9 @@
         Modal
     </div>
 
-    <button onclick="ft_signInButton()">
+    <button class="signInButtonClass"
+            onclick="ft_signInButton()"
+    >
 
         Sign In
     </button>

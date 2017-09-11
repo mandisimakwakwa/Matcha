@@ -9,5 +9,4 @@ function ft_signInButton() {
     var modal = document.getElementsByClassName('modalClass').item(0);
 
     modal.style.display = "flex";
-    console.log(modal);
 }
