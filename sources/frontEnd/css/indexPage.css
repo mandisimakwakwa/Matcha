@@ -74,8 +74,11 @@
             .modalClass {
 
                 /* Display Layer */
+                display: none;
+
                 /* Dimensions */
                 width: 100%;
+
                 /* Text Styles */
                 /* Element Styles */
                 /* Animation */
