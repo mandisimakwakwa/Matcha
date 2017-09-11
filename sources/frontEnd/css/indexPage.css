@@ -4,10 +4,12 @@
     \\==========================//
 */
 
-    header, section, footer {
+/* Display Layer */
+/* Dimensions */
+/* Text Styles */
+/* Element Styles */
+/* Animation */
 
-
-    }
 /*====================================================================================================================*/
 /*
     //==========================\\
@@ -15,6 +17,22 @@
     \\==========================//
 */
 
+    .header {
+
+        /* Display Layer */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Dimensions */
+        flex: 1;
+        min-width: 99%;
+        padding: 5px;
+
+        /* Text Styles */
+        /* Element Styles */
+        /* Animation */
+    }
 /*====================================================================================================================*/
 /*
     //==========================\\
@@ -25,6 +43,7 @@
     /* CSS syntax means div with class .bodyDivClass */
     div.bodyDivClass {
 
+        display: flex;
         background-color: sandybrown;
         justify-content: center;
         align-items: center;
@@ -33,6 +52,34 @@
         min-height: 100vh !important;
         min-width: 100vw !important;
     }
+
+        .section {
+
+            /* Display Layer */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+
+            /* Dimensions */
+            flex: 15;
+            min-width: 99%;
+            padding: 5px;
+
+            /* Text Styles */
+            /* Element Styles */
+            /* Animation */
+        }
+
+            .modalClass {
+
+                /* Display Layer */
+                /* Dimensions */
+                width: 100%;
+                /* Text Styles */
+                /* Element Styles */
+                /* Animation */
+            }
 /*====================================================================================================================*/
 /*
     //==========================\\
@@ -40,6 +87,22 @@
     \\==========================//
 */
 
+    .footer {
+
+        /* Display Layer */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Dimensions */
+        flex: 1;
+        min-width: 99%;
+        padding: 5px;
+
+        /* Text Styles */
+        /* Element Styles */
+        /* Animation */
+    }
 /*====================================================================================================================*/
 /*
     //==========================\\

@@ -1,4 +1,4 @@
-<header class="divDebugClassOne">
+<header class="header">
 
     This is the header.
 </header>

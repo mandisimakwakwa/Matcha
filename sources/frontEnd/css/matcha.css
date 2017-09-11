@@ -4,11 +4,17 @@
     \\==========================//
 */
 
+/* Display Layer */
+/* Dimensions */
+/* Text Styles */
+/* Element Styles */
+/* Animation */
+
     /* CSS Comma Separator means AND */
     html, body {
 
         /* Display Layer */
-        display: flex;
+        /*display: flex;*/
 
         /* Dimensions */
         /*min-height: 100%;*/
@@ -16,14 +22,8 @@
         padding: 0;
 
         /* Text Styles */
-        /* Color Styles */
+        /* Element Styles */
         /* Animation */
-    }
-
-    /* CSS Styling for forcing flex on all content children */
-    html, body * {
-
-        display: inherit;
     }
 /*====================================================================================================================*/
 /*
@@ -40,6 +40,21 @@
 */
 
 
+    .modal {
+
+        /* Display Layer */
+        display: none;
+
+        /* Dimensions */
+        min-height: 100%;
+        min-width: 100%;
+
+        /* Text Styles */
+        /* Element Styles */
+        background-color: silver;
+
+        /* Animation */
+    }
 /*====================================================================================================================*/
 /*
     //==========================\\
