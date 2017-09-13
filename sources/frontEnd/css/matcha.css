@@ -42,18 +42,66 @@
 
     .modalClass {
 
-        /* Display Layer */
+        /* Display Layers */
         display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
 
         /* Dimensions */
         width: 100%;
         height: 100%;
-        z-index: 2;
+        z-index: 10;
 
         /* Text Styles */
         /* Element Styles */
         /* Animation */
     }
+
+        .modalClassContentClass {
+
+            /* Display Layer */
+            display: flex;
+            position: fixed;
+            flex-flow: column;
+
+            /* Dimensions */
+            height: 70%;
+            width: 25%;
+            z-index: 25;
+
+            /* Text Styles */
+            /* Element Styles */
+            /* Animation */
+        }
+
+            .modalFillerClass {
+
+                /* Display Layer */
+                display: flex;
+                flex-flow: row;
+                flex: 1;
+                justify-content: flex-end;
+                align-items: center;
+
+                /* Dimensions */
+
+                /* Text Styles */
+                /* Element Styles */
+                /* Animation */
+            }
+
+                .sideFillerClass {
+
+                    /* Display Layer */
+                    display: flex;
+                    flex: 10;
+
+                    /* Dimensions */
+                    /* Text Styles */
+                    /* Element Styles */
+                    /* Animation */
+                }
 /*====================================================================================================================*/
 /*
     //==========================\\
@@ -68,4 +116,24 @@
     \\==========================//
 */
 
+    .modalCloseButtonClass {
+
+        /* Display Layer */
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+        /* Dimensions */
+        /* Text Styles */
+        font-size: larger;
+        font-weight: bolder;
+        color: black;
+
+        /* Element Styles */
+        background-color: red;
+        cursor: pointer
+
+        /* Animation */
+    }
 /*====================================================================================================================*/

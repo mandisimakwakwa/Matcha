@@ -2,7 +2,30 @@
 
     <div class="modalClass divDebugClassOne">
 
-        Modal
+        <div class="modalClassContentClass divDebugClassTwo"
+        >
+
+            <div class="modalFillerClass divDebugClassThree"
+            >
+
+                <div class="sideFillerClass"></div>
+                <button title="Close"
+                        class="modalCloseButtonClass"
+                        onclick="ft_closeModal()"
+                >
+
+                    &times;
+                </button>
+            </div>
+            <div class="signInFormContainerClass divDebugClassFour"
+            >
+
+            </div>
+            <div class="modalFillerClass divDebugClassThree"
+            >
+
+            </div>
+        </div>
     </div>
 
     <button class="signInButtonClass"
