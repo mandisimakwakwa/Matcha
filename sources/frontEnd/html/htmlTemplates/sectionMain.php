@@ -24,6 +24,18 @@
             <div class="modalFillerClass divDebugClassThree"
             >
 
+                <button title="Cancel"
+                        class="modalCancelButtonClass"
+                        onclick="ft_closeModal()"
+                >
+
+                    Cancel
+                </button>
+                <div class="sideFillerClass"></div>
+                <div class="forgotPasswordClass">
+
+                    <pre>Forgot <a href="#">password?</a></pre>
+                </div>
             </div>
         </div>
     </div>

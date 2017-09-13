@@ -66,8 +66,8 @@
             flex-flow: column;
 
             /* Dimensions */
-            height: 70%;
-            width: 25%;
+            height: 80%;
+            width: 30%;
             z-index: 25;
 
             /* Text Styles */
@@ -134,6 +134,22 @@
         background-color: red;
         cursor: pointer
 
+        /* Animation */
+    }
+
+    .modalCancelButtonClass {
+
+        /* Display Layer */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Dimensions */
+        width: 25%;;
+
+        /* Text Styles */
+        /* Element Styles */
+        background-color: red;
         /* Animation */
     }
 /*====================================================================================================================*/

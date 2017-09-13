@@ -113,4 +113,19 @@
     \\==========================//
 */
 
+    .forgotPasswordClass {
+
+        /* Display Layer */
+        display: flex;
+        /*flex-flow: row;*/
+        justify-content: center;
+        align-items: center;
+
+        /* Dimensions */
+        width: 50%;
+
+        /* Text Styles */
+        /* Element Styles */
+        /* Animation */
+    }
 /*====================================================================================================================*/
