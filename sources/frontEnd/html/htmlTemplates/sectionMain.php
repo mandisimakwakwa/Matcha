@@ -20,7 +20,57 @@
             <div class="signInFormContainerClass divDebugClassFour"
             >
 
+                <div class="signInTitleClass">
+
+                    <h1>Sign In</h1>
+                </div>
+                <form class="signInFormClass"
+                      method="post"
+                >
+
+                    <label for="signInInputEmailID">
+
+                        <b>Email</b>
+                        <br/>
+                    </label>
+                    <input type="text"
+                           placeholder="Please Enter Email or Username"
+                           class="inputTextClass"
+                           id="signInInputEmailID"
+                    />
+
+                    <br/>
+
+                    <label for="signInInputPasswordID">
+
+                        <b>Password</b>
+                        <br/>
+                    </label>
+                    <input type="text"
+                           placeholder="Please Enter Password"
+                           class="inputTextClass"
+                           id="signInInputPasswordID"
+                    />
+                </form>
+                <button class="submitButtonClass"
+                        onclick="ft_submitButton()"
+                >
+
+                    Submit
+                </button>
+
+                <div>
+
+                    <input type="checkbox"
+                           id="remeberMeCheckBoxID"
+                    />
+                    <label for="remeberMeCheckBoxID">
+
+                        Remember me
+                    </label>
+                </div>
             </div>
+
             <div class="modalFillerClass divDebugClassThree"
             >
 

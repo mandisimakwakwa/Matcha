@@ -76,6 +76,7 @@
                 /* Display Layer */
                 display: flex;
                 flex: 10;
+                flex-flow: column;
 
                 /* Dimensions */
 

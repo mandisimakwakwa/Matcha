@@ -12,3 +12,8 @@ function ft_signInButton() {
     modal.addEventListener("click", ft_outsideClickCloseModal);
 }
 
+function ft_submitButton() {
+
+    console.log("Submit Button Pressed.");
+}
+
