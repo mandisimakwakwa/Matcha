@@ -14,36 +14,42 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
             $passCounter = 0;
 
             //Test Sum
-            $testSum = 2;
+            $testSum = 5;
 
             //Test One
+            //Test Name : ft_getCurrentFilename
 
             $testNumber = 1;
 
-            $functionName = "ft_getCurrentFilename";
-            $functionLocation = "matchaDTO.php";
-            $functionStartLine = "Line 7";
+            $testFunctionName = "ft_getCurrentFilename";
+            $testFunctionLocation = "matchaDTO.php";
+            $testFunctionStartLine = "Line 7";
+
+            $passCondition = "index";
 
             $originalResult = ft_getCurrentFilename();
-            $expectedResult = "index";
+            $expectedResult = $passCondition;
 
             if ($expectedResult == $originalResult) {
 
                 $passCounter++;
             } else {
 
-                throw New Exception(ft_unitTestFailError($testNumber, $functionName, $functionLocation, $functionStartLine));
+                throw New Exception(ft_unitTestFailError($testNumber, $testFunctionName, $testFunctionLocation, $testFunctionStartLine));
             }
 
             //Test Two
+            //Test Name : ft_checkPage
 
             $testNumber = 2;
 
-            $functionName = "ft_checkPage";
-            $functionLocation = "matchaDTO.php";
-            $functionStartLine = "Line 15";
+            $testFunctionName = "ft_checkPage";
+            $testFunctionLocation = "matchaDTO.php";
+            $testFunctionStartLine = "Line 15";
 
-            $originalResult = ft_checkPage("main");
+            $passCondition = "main";
+
+            $originalResult = ft_checkPage($passCondition);
             $expectedResult = true;
 
             if ($expectedResult == $originalResult) {
@@ -51,11 +57,81 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
                 $passCounter++;
             } else {
 
-                throw New Exception(ft_unitTestFailError($testNumber, $functionName, $functionLocation, $functionStartLine));
+                throw New Exception(ft_unitTestFailError($testNumber, $testFunctionName, $testFunctionLocation, $testFunctionStartLine));
             }
 
             //Test Three
-                //Test Three goes here...
+            //Test Name : ft_arrayDebugger
+
+            $testNumber = 3;
+
+            $testFunctionName = "ft_arrayDebugger";
+            $testFunctionLocation = "phpDebugger.php";
+            $testFunctionStartLine = "Line 8";
+
+            $passCondition = array(1, 2, 3, 4);
+
+            $originalResult = ft_arrayDebugger(array($passCondition));
+            $expectedResult = true;
+
+            if ($expectedResult == $originalResult) {
+
+                $passCounter++;
+            } else {
+
+                throw New Exception(ft_unitTestFailError($testNumber, $testFunctionName, $testFunctionLocation, $testFunctionStartLine));
+            }
+
+            //Test Four
+            //Test Name : ft_getConnection
+
+            $testNumber = 4;
+
+            $testFunctionName = "ft_getConnection";
+            $testFunctionLocation = "setup.php";
+            $testFunctionStartLine = "Line 28";
+
+            $dsn = "mysql:host=localhost";
+            $user = "root";
+            $password = "password";
+
+            $originalResult = ft_getConnection($dsn, $user, $password);
+            $expectedResult = true;
+
+            if ($expectedResult == $originalResult) {
+
+                $passCounter++;
+            } else {
+
+                throw New Exception(ft_unitTestFailError($testNumber, $testFunctionName, $testFunctionLocation, $testFunctionStartLine));
+            }
+
+            //Test Five
+            //Test Name : ft_createDB
+
+            $testNumber = 5;
+
+            $testFunctionName = "ft_createDB";
+            $testFunctionLocation = "sqlPHPPageHandler.php";
+            $testFunctionStartLine = "Line 22";
+
+            $dsn = "mysql:host=localhost";
+            $user = "root";
+            $password = "password";
+            $dbConnName = $_SESSION['dbConnName'];
+
+            $passCondition = ft_getConnection($dsn, $user, $password);
+
+            $originalResult = ft_createDB($passCondition, $dbConnName);
+            $expectedResult = true;
+
+            if ($expectedResult == $originalResult) {
+
+                $passCounter++;
+            } else {
+
+                throw New Exception(ft_unitTestFailError($testNumber, $testFunctionName, $testFunctionLocation, $testFunctionStartLine));
+            }
 
             //Pass Check
 
