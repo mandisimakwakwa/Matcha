@@ -19,16 +19,10 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
         $_SESSION['httpLoginPassword'] = "#";
 
         //Misc Sessions
-        $_SESSION['errorLog'] = #"";
+        $_SESSION['errorLog'] = "#";
 
         //Header User Check
         $_SESSION['checkPageName'] = "#";
-
-    //Establish Network Connection
-    $dbConn = ft_getConnection($dbConnDSN, $dbConnUser, $dbConnPassword);
-
-    //Create Database
-    ft_createDB($dbConn, $dbConnName);
 
     //Get Connection Function
     function ft_getConnection($dsn, $user, $password) {
@@ -45,6 +39,19 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
             echo "Connection Failure Due To: " . $exception->getMessage() . PHP_EOL;
         }
     }
+
+    //Establish Network Connection
+    $dbConn = ft_getConnection($dbConnDSN, $dbConnUser, $dbConnPassword);
+
+    //Create Database
+    ft_createDB($dbConn, $dbConnName);
+
+
+    //Use Matcha DB
+    ft_useMatchaDB($dbConn, $dbConnName);
+
+    //Create Users Table
+    ft_createUsersTable($dbConn);
 
     //Debug Sessions
 //    ft_arrayDebugger($_SESSION);

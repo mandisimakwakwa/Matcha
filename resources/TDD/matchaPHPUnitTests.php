@@ -4,7 +4,13 @@
 $projectRoot = substr(getcwd(), 0, strpos(getcwd(), "sources"));
 require $projectRoot . 'sources/backEnd/engines/controllers/relativePathController.php';
 
+    //Session Creator
+    session_start();
+
+    $dbConnName = $_SESSION['dbConnName'];
+
 //PHP Custom Rudimentary Unit Tests
+
 
     //Unit Tests
     function ft_runUnitTests() {
@@ -14,7 +20,7 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
             $passCounter = 0;
 
             //Test Sum
-            $testSum = 5;
+            $testSum = 8;
 
             //Test One
             //Test Name : ft_getCurrentFilename
@@ -95,7 +101,9 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
             $user = "root";
             $password = "password";
 
-            $originalResult = ft_getConnection($dsn, $user, $password);
+            $dbConn = ft_getConnection($dsn, $user, $password);
+
+            $originalResult = $dbConn;
             $expectedResult = true;
 
             if ($expectedResult == $originalResult) {
@@ -107,22 +115,81 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
             }
 
             //Test Five
-            //Test Name : ft_createDB
+            //Test Name : ft_queryExecute Function
 
             $testNumber = 5;
+
+            $testFunctionName = "ft_queryExecute";
+            $testFunctionLocation = "sqlPHPPageHandler.php";
+            $testFunctionStartLine = "Line 4";
+
+            $dbQuery = "CREATE DATABASE IF NOT EXISTS MatchaTestDB";
+
+            $originalResult = ft_queryExecute($dbConn, $dbQuery);
+            $expectedResult = true;
+
+            if ($expectedResult == $originalResult) {
+
+                $passCounter++;
+            } else {
+
+                throw New Exception(ft_unitTestFailError($testNumber, $testFunctionName, $testFunctionLocation, $testFunctionStartLine));
+            }
+
+            //Test Six
+            //Test Name : ft_createDB
+
+            $testNumber = 6;
 
             $testFunctionName = "ft_createDB";
             $testFunctionLocation = "sqlPHPPageHandler.php";
             $testFunctionStartLine = "Line 22";
 
-            $dsn = "mysql:host=localhost";
-            $user = "root";
-            $password = "password";
             $dbConnName = $_SESSION['dbConnName'];
 
-            $passCondition = ft_getConnection($dsn, $user, $password);
+            $originalResult = ft_createDB($dbConn, $dbConnName);
+            $expectedResult = true;
 
-            $originalResult = ft_createDB($passCondition, $dbConnName);
+            if ($expectedResult == $originalResult) {
+
+                $passCounter++;
+            } else {
+
+                throw New Exception(ft_unitTestFailError($testNumber, $testFunctionName, $testFunctionLocation, $testFunctionStartLine));
+            }
+
+            //Test Seven
+            //Test Name : ft_useMatchaDB
+
+            $testNumber = 7;
+
+            $testFunctionName = "ft_useMatchaDB";
+            $testFunctionLocation = "sqlPHPPageHandler.php";
+            $testFunctionStartLine = "Line 40";
+
+
+            $originalResult = ft_useMatchaDB($dbConn, $dbConnName);
+            $expectedResult = true;
+
+            if ($expectedResult == $originalResult) {
+
+                $passCounter++;
+            } else {
+
+                throw New Exception(ft_unitTestFailError($testNumber, $testFunctionName, $testFunctionLocation, $testFunctionStartLine));
+            }
+
+            //Test Eight
+            //Test Name : ft_createUsersTable
+
+            $testNumber = 8;
+
+            $testFunctionName = "ft_createUsersTable";
+            $testFunctionLocation = "sqlPHPPageHandler.php";
+            $testFunctionStartLine = "Line 58";
+
+
+            $originalResult = ft_createUsersTable($dbConn);
             $expectedResult = true;
 
             if ($expectedResult == $originalResult) {
@@ -139,7 +206,6 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
 
                 return true;
             }
-
         } catch (Exception $e) {
 
             echo $e->getMessage();
