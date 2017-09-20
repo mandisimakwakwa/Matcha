@@ -69,6 +69,17 @@
                         Remember me
                     </label>
                 </div>
+
+                <div>|</div>
+
+                <button>
+
+                    Google
+                </button>
+                <button>
+
+                    Facebook
+                </button>
             </div>
 
             <div class="modalFillerClass divDebugClassThree"
