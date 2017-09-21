@@ -4,6 +4,8 @@ function ft_indexHandlerDebugger() {
     console.log("Index JS On.");
 }
 
+//Client-Side Button Logic
+
 function ft_signInButton() {
 
     var modal = document.getElementsByClassName('modalClass').item(0);
