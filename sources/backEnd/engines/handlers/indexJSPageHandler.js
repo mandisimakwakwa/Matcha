@@ -1,7 +1,7 @@
 //Debug
 function ft_indexHandlerDebugger() {
 
-    console.log("Index JS On");
+    console.log("Index JS On.");
 }
 
 function ft_signInButton() {
