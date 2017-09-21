@@ -72,11 +72,15 @@
 
                 <div>|</div>
 
-                <button>
+                <button class="googleSignInButtonClass"
+                        onclick="ft_googleSignInButton()"
+                >
 
                     Google
                 </button>
-                <button>
+                <button class="facebookSignInButtonClass"
+                        onclick="ft_facebookSignInButton()"
+                >
 
                     Facebook
                 </button>

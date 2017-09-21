@@ -8,6 +8,4 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
     session_start();
 
 //    ft_arrayDebugger($_SESSION);
-
-
 ?>
