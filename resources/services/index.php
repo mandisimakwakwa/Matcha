@@ -2,10 +2,10 @@
 
     //Defining
 
-    require_once __DIR__.'/google/vendor/autoload.php';
+    require_once ServerRoot . "resources/services/google/vendor/autoload.php";
     const CLIENT_ID = '1007816371578-7js0bfdnusmvtu2c9n77gbur3m40lk4k.apps.googleusercontent.com';
     const CLIENT_SECRET = 'Vx6l_nIRX3hlyLG-x9EmFqPT';
-    const REDIRECT_URI = 'http://localhost/Matcha/';
+    const REDIRECT_URI = 'http://localhost/Matcha/sources/frontEnd/html/htmlLayouts/main.php';
 
     session_start();
     //Initialization
@@ -16,7 +16,7 @@
     $client->setRedirectUri(REDIRECT_URI);
     $client->setScopes('email');
 
-    $plus = new Google_Service_Plis($client);
+    $plus = new Google_Service_Plus($client);
     //Actual Process
 
     if (isset($_REQUEST['logout'])) {
@@ -35,7 +35,7 @@
     if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
 
         $client->setAccessToken($_SESSION['access_token']);
-        $me = $plus->pepple->get('me');
+        $me = $plus->people->get('me');
 
         $id = $me['id'];
         $name = $me['displayName'];
@@ -55,7 +55,7 @@
 
         if (isset($authUrl)) {
 
-            echo "<a class='login' href='".$authUrl."'><img src='google/signin_button.png' height='50px'/>";
+            echo "<a class='login' href='".$authUrl."'><img src='google/signin_button.png'/>";
         } else {
 
             print "ID: {$id} <br>";

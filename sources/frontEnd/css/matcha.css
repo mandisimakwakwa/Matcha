@@ -116,6 +116,17 @@
     \\==========================//
 */
 
+    .modalButtonClass {
+
+        /* Display Layer */
+        /* Dimensions */
+        max-height: 2px;
+        max-width: 5px;
+
+        /* Text Styles */
+        /* Element Styles */
+        /* Animation */
+    }
     .modalCloseButtonClass {
 
         /* Display Layer */
