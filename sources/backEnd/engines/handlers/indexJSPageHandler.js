@@ -6,12 +6,13 @@ function ft_indexHandlerDebugger() {
 
 //Client-Side Button Logic
 
-function ft_signInButton() {
+function ft_testSignInButton() {
 
-    var modal = document.getElementsByClassName('modalClass').item(0);
+    console.log("hi");
+   /* var modal = document.getElementsByClassName('modalClass').item(0);
 
     modal.style.display = "flex";
-    modal.addEventListener("click", ft_outsideClickCloseModal);
+    modal.addEventListener("click", ft_outsideClickCloseModal);*/
 }
 
 function ft_signOutButton() {

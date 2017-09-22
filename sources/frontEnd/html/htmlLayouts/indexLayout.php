@@ -38,7 +38,7 @@
                 type="text/javascript"
         ></script>
 
-        <script src="sources/backEnd/engines/controllers/matchaController.js"
+        <script src="sources/backEnd/engines/controllers/matchaJSController.js"
                 type="text/javascript"
         ></script>
         <script src="sources/backEnd/engines/controllers/ajaxController.js"
@@ -57,9 +57,7 @@
 
             <?php
 
-            include $headerTemplate;
-            include $sectionMainTemplate;
-            include $footerTemplate;
+                include $sectionMainTemplate;
             ?>
         </div>
     </body>

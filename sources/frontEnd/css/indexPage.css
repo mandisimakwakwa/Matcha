@@ -49,8 +49,8 @@
         align-items: center;
         flex-flow: column;
         /*min-height: 100%;*/
-        min-height: 100vh !important;
-        min-width: 100vw !important;
+        min-height: 95vh !important;
+        min-width: 95vw !important;
     }
 
         .section {
@@ -63,7 +63,7 @@
 
             /* Dimensions */
             flex: 15;
-            min-width: 99%;
+            /*min-width: 95%;*/
             padding: 5px;
 
             /* Text Styles */
@@ -71,18 +71,45 @@
             /* Animation */
         }
 
-            .signInFormContainerClass {
+            .indexPage1Div, .indexPage2Div, .indexPage3Div, .indexPage4Div {
 
-                /* Display Layer */
                 display: flex;
-                flex: 10;
-                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                opacity: 0.7;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
 
-                /* Dimensions */
+            .indexPage1Div {
 
-                /* Text Styles */
-                /* Element Styles */
-                /* Animation */
+                background-image: url("../../../resources/images/backgrounds/background_1.jpg");
+                min-height: 99vh;
+                min-width: 95vw;
+            }
+
+            .indexPage2Div {
+
+                background-image: url("../../../resources/images/backgrounds/background_2.jpg");
+                min-height: 99vh;
+                min-width: 95vw;
+            }
+
+            .indexPage3Div {
+
+                background-image: url("../../../resources/images/backgrounds/background_1.jpg");
+                min-height: 99vh;
+                min-width: 95vw;
+            }
+
+            .indexPage4Div {
+
+                background-image: url("../../../resources/images/backgrounds/background_2.jpg");
+                min-height: 99vh;
+                min-width: 95vw;
             }
 /*====================================================================================================================*/
 /*
@@ -113,6 +140,14 @@
     ||      Extra Styling      ||
     \\==========================//
 */
+
+@media screen {
+
+    .indexPage1Div, .indexPage2Div, .indexPage3Div, .indexPage4Div {
+
+        background-attachment: scroll;
+    }
+}
 
     .forgotPasswordClass {
 

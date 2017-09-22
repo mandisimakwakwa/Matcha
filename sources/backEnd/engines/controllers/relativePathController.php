@@ -20,12 +20,16 @@
         require_once ServerRoot . "sources/backEnd/engines/handlers/galleryPHPPageHandler.php";
         require_once ServerRoot . "sources/backEnd/engines/handlers/sqlPHPPageHandler.php";
         require_once ServerRoot . "sources/backEnd/engines/handlers/emailPHPPageHandler.php";
+        //require_once ServerRoot . "sources/backEnd/engines/engines/controllers/phpPathController.php";
 
-    //require_once ServerRoot . "sources/backEnd/engines/engines/controllers/phpPathController.php";
+    //HTML Markup Controllers
+        //HTML Templates Level 1
         $headerTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/header.php";
         $sectionMainTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/sectionMain.php";
         $sectionAsideTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/sectionAside.php";
         $footerTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/footer.php";
+            //HTML Templates Level 2
+            $indexSectionMainTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/index/indexSectionMain.php";
 
         $indexLayout = ServerRoot . "sources/frontEnd/html/htmlLayouts/indexLayout.php";
         $mainLayout = ServerRoot . "sources/frontEnd/html/htmlLayouts/mainLayout.php";
