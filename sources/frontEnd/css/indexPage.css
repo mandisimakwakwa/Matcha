@@ -185,7 +185,7 @@
     \\==========================//
 */
 
-@media screen {
+@media (max-width: 568px) {
 
     .indexPage1DivClass, .indexPage2DivClass, .indexPage3DivClass, .indexPage4DivClass {
 
