@@ -56,6 +56,47 @@
     \\==========================//
 */
 
+    .paneDivClass {
+
+        text-align: center;
+        padding: 50px 80px;
+    }
+
+    .paneDivLightClass {
+
+        background-color: #f4f4f4;
+        color: #666;
+    }
+
+    .paneDivDarkClass {
+
+        background-color: #282e34;
+        color: #ddd;
+    }
+
+        .textDivClass {
+
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+            font-size: 27px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+
+        .textDivClass .borderClass {
+
+            background-color: #777;
+            color: #fff;
+            padding: 40px;
+        }
+
+        .textDivClass .borderClass .transClass {
+
+            background-color: transparent;
+        }
 /*====================================================================================================================*/
 /*
     //==========================\\
@@ -70,4 +111,23 @@
     \\==========================//
 */
 
+    .fillerClass {
+
+        display: flex;
+        flex: 1 1;
+        justify-content: center;
+        align-items: center;
+        min-width: 60%;
+    }
+
+    .rowClass {
+
+        display: flex;
+        flex-flow: row;
+    }
+
+    .columnClass {
+
+        flex-flow: column;
+    }
 /*====================================================================================================================*/

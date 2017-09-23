@@ -1,7 +1,22 @@
 <div class="indexPage1DivClass">
 
-    <div class="indexPageShortDivClass">Div One</div>
-    <div class="indexPageLongDivClass">Div Two</div>
+    <div class="indexPageShortDivClass">
+
+        <div>Menu Button</div>
+        <div class="fillerClass divDebugClassOne"></div>
+        <div class="rowClass">
+
+            <div>Sign In</div>
+            <div>Sign Up</div>
+        </div>
+    </div>
+    <div class="indexPageLongDivClass textDiv">
+
+        <h1>
+
+            Matcha
+        </h1>
+    </div>
     <div class="indexPageLongDivClass">Div Three</div>
 </div>
 

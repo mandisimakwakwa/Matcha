@@ -48,6 +48,7 @@
         display: flex;
         background-color: #561a02;
         /*filter: blur(5px);*/
+        /*z-index: -1;```*/
         justify-content: center;
         align-items: center;
         flex-flow: column;
@@ -94,14 +95,16 @@
                 background-color: transparent;
                 margin: 0;
                 padding: 0;
+                /*z-index: 2;*/
                 /*filter: blur(8px) saturate(3) invert(100);*/
-                filter: contrast(100) invert(100) blur(0.79px);
+                filter: contrast(100) invert(100);
             }
 
                 .indexPageShortDivClass {
 
                     /* Display Layer */
                     display: flex;
+                    flex-flow: row;
                     justify-content: center;
                     align-items: center;
 
@@ -111,6 +114,7 @@
 
                     /* Text Styles */
                     /* Element Styles */
+                    position: relative;
                     /* Animation */
                 }
 
@@ -160,24 +164,6 @@
     \\==========================//
 */
 
-    /*.footer {
-
-        !* Display Layer *!
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        !* Dimensions *!
-        padding: 0;
-        margin: 0;
-        !*flex: 1;*!
-        !*min-width: 99%;*!
-        !*padding: 5px;*!
-
-        !* Text Styles *!
-        !* Element Styles *!
-        !* Animation *!
-    }*/
 /*====================================================================================================================*/
 /*
     //==========================\\
