@@ -1,27 +1,24 @@
-<div class="indexPage1Div">
+<div class="indexPage1DivClass">
 
-    Page One
+    <div class="indexPageShortDivClass">Div One</div>
+    <div class="indexPageLongDivClass">Div Two</div>
+    <div class="indexPageLongDivClass">Div Three</div>
+</div>
+
+<div class="indexPage2DivClass">
+
     <div>Div One</div>
     <div>Div Two</div>
 </div>
 
-<div class="indexPage2Div">
+<div class="indexPage3DivClass">
 
-    Page Two
     <div>Div One</div>
     <div>Div Two</div>
 </div>
 
-<div class="indexPage3Div">
+<div class="indexPage4DivClass">
 
-    Page Three
-    <div>Div One</div>
-    <div>Div Two</div>
-</div>
-
-<div class="indexPage4Div">
-
-    Page Four
     <div>Div One</div>
     <div>Div Two</div>
 </div>

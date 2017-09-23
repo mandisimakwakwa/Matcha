@@ -51,7 +51,7 @@
 
         <title>Matcha</title>
     </head>
-    <body class="bodyClass">
+    <body>
 
         <div class="bodyDivClass">
 
