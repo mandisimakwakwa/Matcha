@@ -92,7 +92,7 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
-                background-color: transparent;
+                /*background-color: transparent;*/
                 margin: 0;
                 padding: 0;
                 /*z-index: 2;*/
@@ -109,15 +109,81 @@
                     align-items: center;
 
                     /* Dimensions */
-                    min-height: 10%;
-                    min-width: 100%;
-                    top: 0;
+                    min-height: 15%;
+                    min-width: 95%;
+                    padding: 25px 0px;
+                    /*top: 0;*/
 
                     /* Text Styles */
                     /* Element Styles */
-                    position: fixed;
+                    /*position: fixed;*/
+
                     /* Animation */
                 }
+
+                    .menuButtonClass {
+
+                        /* Display Layer */
+                        /* Dimensions */
+                        margin: 5px;
+                        padding: 10px;
+
+                        /* Text Styles */
+                        /* Element Styles */
+                        background-color: black;
+                        /* Animation */
+                    }
+
+                    .loginButtonClass {
+
+                        /* Display Layer */
+                        /* Dimensions */
+                        margin: 5px;
+                        padding: 10px;
+
+                        /* Text Styles */
+                        /* Element Styles */
+                        cursor: pointer;
+                        /* Animation */
+                    }
+
+                    .loginTitleButtonClass {
+
+                        /* Display Layer */
+                        /* Dimensions */
+                        margin: 5px;
+                        padding: 10px;
+
+                        /* Text Styles */
+                        /* Element Styles */
+                        cursor: pointer;
+                        background-color: black;
+                        /* Animation */
+                    }
+
+                    .signUpButtonClass {
+
+                        /* Display Layer */
+                        /* Dimensions */
+                        margin: 5px;
+                        padding: 10px;
+
+                        /* Text Styles */
+                        /* Element Styles */
+                        background-color: black;
+                        /* Animation */
+                    }
+
+                    .loginMarkupMsgClass {
+
+                        /* Display Layer */
+
+                        /* Dimensions */
+
+                        /* Text Styles */
+                        /* Element Styles */
+                        /* Animation */
+                    }
 
                 .indexPageLongDivClass {
 
@@ -134,6 +200,60 @@
                     /* Element Styles */
                     /* Animation */
                 }
+
+                    .paneIndexLoginDivClass {
+
+                        /* Display Layer */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        /* Dimensions */
+                        flex: 1;
+                        min-height: 100%;
+
+                        /* Text Styles */
+                        /* Element Styles */
+                        /* Animation */
+                    }
+
+                .googleLoginButtonClass {
+
+                    /* Display Layer */
+                    /* Dimensions */
+                    margin: 5px;
+                    padding: 10px 50px;
+
+                    /* Text Styles */
+                    text-transform: none;
+
+                    /* Element Styles */
+                    background-color: #ff2300;
+                    cursor: pointer;
+                    /* Animation */
+                }
+
+                    .googleLoginButtonClass:hover {
+
+                        /* Element Styles */
+                        background-color: #c00300;
+                    }
+
+                    .loginFormClass {
+
+                        /* Display Layer */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        /* Dimensions */
+
+                        /* Text Styles */
+                        color: #ffffff;
+
+                        /* Element Styles */
+                        /* Animation */
+                    }
 
             .indexPage1DivClass {
 

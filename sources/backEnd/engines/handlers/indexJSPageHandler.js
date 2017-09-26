@@ -40,3 +40,13 @@ function ft_menuButton() {
     console.log("Menu Button Pressed.");
 }
 
+function ft_loginButton() {
+
+    console.log("Login Button Pressed.")
+}
+
+function ft_signUpButton() {
+
+    console.log("Sign Up Button Pressed");
+}
+

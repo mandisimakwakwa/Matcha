@@ -26,7 +26,7 @@
         font-family: "Lato", sans-serif;
         font-weight: 500;
         line-height: 1.8em;
-        color: black;
+        color:#fff;
 
         /* Element Styles */
         /* Animation */
@@ -58,28 +58,73 @@
 
     .paneDivClass {
 
+        /* Display Layer */
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+        /* Dimensions */
+        min-width: 100%;
+        min-height: 30vh;
+        padding: 50px 0px;
+
+        /* Text Styles */
         text-align: center;
-        padding: 50px 80px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+
+        /* Element Styles */
+        filter: blur(0.79px);
+
+        /* Animation */
+    }
+
+    .paneDivRowClass {
+
+        /* Display Layer */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Dimensions */
+        min-width: 45%;
+        min-height: 40vh;
+        padding: 50px 0px;
+
+        /* Text Styles */
+        text-align: center;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+
+        /* Element Styles */
+        filter: blur(0.79px);
+
+        /* Animation */
     }
 
     .paneDivLightClass {
 
-        background-color: #f4f4f4;
-        color: #666;
+        color: #666; !important;
     }
 
     .paneDivDarkClass {
 
-        background-color: #282e34;
-        color: #ddd;
+        color: #ececec; !important;
     }
+
+        .divBottomClass {
+
+            display: flex;
+            align-self: flex-end; !important;
+        }
 
         .textDivClass {
 
             /* Display Layer */
 
             /* Dimensions */
-            padding: 40px 135px;
+            padding: 45px 135px;
 
             /* Text Styles */
             text-align: center;
@@ -87,7 +132,6 @@
             text-transform: uppercase;
 
             /* Element Styles */
-            background-color: #A07261;
             filter: blur(0.79px);
 
             /* Animation */
@@ -122,13 +166,31 @@
 
     .rowClass {
 
+        /* Display Layer */
         display: flex;
         flex-flow: row;
+
+        /* Dimensions */
+        /* Text Styles */
+        /* Element Styles */
+        /* Animation */
     }
 
     .columnClass {
 
+        /* Display Layer */
+        display: flex;
         flex-flow: column;
+
+        /* Dimensions */
+        /* Text Styles */
+        /* Element Styles */
+        /* Animation */
+    }
+
+    .pointerClass {
+
+        cursor: pointer;
     }
 
     /*Color Themes*/
@@ -136,9 +198,9 @@
     .w3-theme-l4 {color:#000 !important; background-color:#e7dcd7 !important}
     .w3-theme-l3 {color:#000 !important; background-color:#d0b8b0 !important}
     .w3-theme-l2 {color:#fff !important; background-color: #b89588 !important}
-    .w3-theme-l1 {color:#fff !important; background-color:#a07261 !important}
+    .w3-theme-l1 {background-color:#a07261 !important}
     .w3-theme-d1 {color:#fff !important; background-color:#6d4d41 !important}
-    .w3-theme-d2 {color:#fff !important; background-color:#61443a !important}
+    .w3-theme-d2 {background-color:#61443a !important}
     .w3-theme-d3 {color:#fff !important; background-color:#553c33 !important}
     .w3-theme-d4 {color:#fff !important; background-color:#49332c !important}
     .w3-theme-d5 {color:#fff !important; background-color:#3d2b24 !important}
