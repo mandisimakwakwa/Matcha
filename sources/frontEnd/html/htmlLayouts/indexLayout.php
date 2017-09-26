@@ -31,6 +31,13 @@
               type="text/css"
         >
 
+        <link rel="stylesheet"
+              href="https://www.w3schools.com/w3css/4/w3.css"
+        >
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        >
+
         <script src="sources/backEnd/engines/handlers/indexJSPageHandler.js"
                 type="text/javascript"
         ></script>

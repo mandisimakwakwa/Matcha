@@ -2,22 +2,32 @@
 
     <div class="indexPageShortDivClass">
 
-        <div>Menu Button</div>
-        <div class="fillerClass divDebugClassOne"></div>
-        <div class="rowClass">
+        <i class="material-icons"
+           onclick="ft_buttonController('menuButton')"
+        >
+            menu
+        </i>
+        <div class="fillerClass"></div>
+        <div class="rowClass ">
 
             <div>Sign In</div>
             <div>Sign Up</div>
         </div>
     </div>
-    <div class="indexPageLongDivClass textDiv">
+    <div class="indexPageLongDivClass">
 
-        <h1>
+        <h1 class="textDivClass borderClass">
 
             Matcha
         </h1>
     </div>
-    <div class="indexPageLongDivClass">Div Three</div>
+    <div class="indexPageLongDivClass">
+
+        <h2 class="paneDivClass">
+
+            Love is an ART to us.
+        </h2>
+    </div>
 </div>
 
 <div class="indexPage2DivClass">

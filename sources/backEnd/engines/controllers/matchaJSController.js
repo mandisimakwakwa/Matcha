@@ -6,6 +6,9 @@ function ft_buttonController(switchNode) {
         case "testSignInButton":
            ft_testSignInButton();
             break;
+        case "menuButton":
+            ft_menuButton();
+            break;
     }
 }
 

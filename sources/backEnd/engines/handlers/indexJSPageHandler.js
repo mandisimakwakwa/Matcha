@@ -35,3 +35,8 @@ function ft_facebookSignInButton() {
     console.log("Facebook Sign In Button Pressed.");
 }
 
+function ft_menuButton() {
+
+    console.log("Menu Button Pressed.");
+}
+

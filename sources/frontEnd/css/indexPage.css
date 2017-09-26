@@ -87,7 +87,7 @@
                 flex-flow: column;
                 align-items: center;
                 position: relative;
-                opacity: .75;
+                /*opacity: .75;*/
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -97,7 +97,7 @@
                 padding: 0;
                 /*z-index: 2;*/
                 /*filter: blur(8px) saturate(3) invert(100);*/
-                filter: contrast(100) invert(100);
+                /*filter: contrast(100);*/
             }
 
                 .indexPageShortDivClass {
@@ -109,12 +109,13 @@
                     align-items: center;
 
                     /* Dimensions */
-                    flex: 6;
+                    min-height: 10%;
                     min-width: 100%;
+                    top: 0;
 
                     /* Text Styles */
                     /* Element Styles */
-                    position: relative;
+                    position: fixed;
                     /* Animation */
                 }
 
@@ -126,7 +127,7 @@
                     align-items: center;
 
                     /* Dimensions */
-                    flex: 25;
+                    flex: 1;
                     min-width: 100%;
 
                     /* Text Styles */
@@ -148,7 +149,7 @@
 
             .indexPage3DivClass {
 
-                background-image: url("../../../resources/images/backgrounds/index/indexBackground_2_AlphaThree.png");
+                background-image: url("../../../resources/images/backgrounds/index/indexBackground_3_AlphaOne.png");
                 min-width: 95vw;
             }
 
