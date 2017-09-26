@@ -52,9 +52,9 @@
 
                 Google
             </div>
-            <span>|</span>
+            <br/>
             <div>OR</div>
-            <span>|</span>
+            <br/>
             <form id="loginFormID"
                   class="loginFormClass columnClass"
                   method="post"
@@ -63,11 +63,18 @@
                 <input type="text"
                        placeholder="Please Enter Email or Username"
                        id="loginEmailUsernameInputID"
+                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
                 />
+
+                <br/>
+
                 <input type="password"
                        placeholder="Please Enter Password"
                        id="loginPasswordInputID"
+                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
                 required/>
+
+                <br/>
 
                 <div class="loginButtonClass w3-theme-d5 w3-hover-theme"
                      onclick="ft_loginButton()"

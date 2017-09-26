@@ -124,7 +124,7 @@
             /* Display Layer */
 
             /* Dimensions */
-            padding: 45px 135px;
+            padding: 55px 335px;
 
             /* Text Styles */
             text-align: center;
@@ -137,9 +137,31 @@
             /* Animation */
         }
 
+            input {
+
+                /* Display Layer */
+
+                /* Dimensions */
+                width: 30vw;
+                padding: 5px;
+
+                /* Text Styles */
+                text-align: center;
+                letter-spacing: 8px;
+                text-transform: uppercase;
+
+                /* Element Styles */
+                /* Animation */
+            }
+
         .transClass {
 
             background-color: transparent;
+        }
+
+        .borderNoneClass {
+
+            border: none;
         }
 /*====================================================================================================================*/
 /*

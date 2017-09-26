@@ -205,7 +205,7 @@
 
                         /* Display Layer */
                         display: flex;
-                        justify-content: center;
+                        justify-content: space-around;
                         align-items: center;
 
                         /* Dimensions */
