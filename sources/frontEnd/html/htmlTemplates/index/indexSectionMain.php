@@ -44,12 +44,6 @@
 
     <div class="indexPageLongDivClass paneIndexLoginDivClass">
 
-        <p class="paneDivRowClass paneDivDarkClass w3-theme-d2 loginMarkupMsgClass">
-
-            Huma mhiri se ku nghena mamba. I tihomu ta ka Sono ti gomolana exivaleni.
-            Ku dya ngopfu a hi ku hlula ndlala. Ku tlula ka mhala swi letela n'wana wa le ndzeni.
-        </p>
-
         <div class="paneDivRowClass w3-theme-d2 columnClass">
 
             <div class="googleLoginButtonClass"
@@ -85,9 +79,109 @@
         </div>
     </div>
 
-    <div class="indexPageLongDivClass divDebugClassThree">
+    <div class="indexPageLongDivClass">
 
-        Div Two
+        <div class="paneDivRowClass w3-theme-l1 columnClass divBottomClass">
+
+            <div class="googleLoginButtonClass"
+                 onclick="ft_googleSignInButton()"
+            >
+
+                Google Sign Up
+            </div>
+            <span>|</span>
+            <div>OR</div>
+            <span>|</span>
+            <form id="loginFormID"
+                  class="loginFormClass columnClass"
+                  method="post"
+            >
+
+                <input type="text"
+                       placeholder="Please Enter Email or Username"
+                       id="loginEmailUsernameInputID"
+                />
+                <input type="password"
+                       placeholder="Please Enter Password"
+                       id="loginPasswordInputID"
+                       required/>
+
+                <div class="loginButtonClass w3-theme-d5 w3-hover-theme"
+                     onclick="ft_loginButton()"
+                >
+
+                    Register
+                </div>
+            </form>
+        </div>
+
+        <div class="paneDivRowClass w3-theme-l1 columnClass divBottomClass">
+
+            <div class="googleLoginButtonClass"
+                 onclick="ft_googleSignInButton()"
+            >
+
+                Google Sign Up
+            </div>
+            <span>|</span>
+            <div>OR</div>
+            <span>|</span>
+            <form id="loginFormID"
+                  class="loginFormClass columnClass"
+                  method="post"
+            >
+
+                <input type="text"
+                       placeholder="Please Enter Email or Username"
+                       id="loginEmailUsernameInputID"
+                />
+                <input type="password"
+                       placeholder="Please Enter Password"
+                       id="loginPasswordInputID"
+                       required/>
+
+                <div class="loginButtonClass w3-theme-d5 w3-hover-theme"
+                     onclick="ft_loginButton()"
+                >
+
+                    Register
+                </div>
+            </form>
+        </div>
+
+        <div class="paneDivRowClass w3-theme-l1 columnClass divBottomClass">
+
+            <div class="googleLoginButtonClass"
+                 onclick="ft_googleSignInButton()"
+            >
+
+                Google Sign Up
+            </div>
+            <span>|</span>
+            <div>OR</div>
+            <span>|</span>
+            <form id="loginFormID"
+                  class="loginFormClass columnClass"
+                  method="post"
+            >
+
+                <input type="text"
+                       placeholder="Please Enter Email or Username"
+                       id="loginEmailUsernameInputID"
+                />
+                <input type="password"
+                       placeholder="Please Enter Password"
+                       id="loginPasswordInputID"
+                       required/>
+
+                <div class="loginButtonClass w3-theme-d5 w3-hover-theme"
+                     onclick="ft_loginButton()"
+                >
+
+                    Register
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
