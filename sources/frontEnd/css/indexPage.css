@@ -121,6 +121,29 @@
                     /* Animation */
                 }
 
+                    .indexLoginDivClass {
+
+                        /* Display Layer */
+
+                        /* Dimensions */
+                        min-width: 25%; !important;
+
+                        /* Text Styles */
+                        /* Element Styles */
+                        /* Animation */
+                    }
+
+                        .forgotPasswordClass {
+
+                            /* Display Layer */
+                            /* Dimensions */
+                            /* Text Styles */
+                            text-decoration: none;
+
+                            /* Element Styles */
+                            /* Animation */
+                        }
+
                     .menuButtonClass {
 
                         /* Display Layer */
@@ -147,7 +170,7 @@
                         /* Animation */
                     }
 
-                    .loginTitleButtonClass {
+                    .loginScrollButtonClass {
 
                         /* Display Layer */
                         /* Dimensions */

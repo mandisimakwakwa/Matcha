@@ -10,8 +10,9 @@
         <div class="fillerClass"></div>
         <div class="rowClass w3-theme-l1">
 
-            <div class="loginTitleButtonClass w3-hover-theme"
-                 onclick="ft_loginButton()"
+            <div class="loginScrollButtonClass w3-hover-theme"
+                 id="loginScrollButtonID"
+                 onclick="ft_loginScrollButton()"
             >
 
                 Login
@@ -44,9 +45,9 @@
 
     <div class="indexPageLongDivClass paneIndexLoginDivClass">
 
-        <div class="paneDivRowClass w3-theme-d2 columnClass">
+        <div class="textDivClass indexLoginDivClass w3-theme-d2 columnClass">
 
-            <div class="googleLoginButtonClass"
+            <div class="googleLoginButtonClass upperCaseClass"
                  onclick="ft_googleSignInButton()"
             >
 
@@ -83,111 +84,108 @@
                     Login
                 </div>
             </form>
+
+            <br/>
+            <a href="#"
+               class="forgotPasswordClass"
+            >
+
+                Forgot Password?
+            </a>
         </div>
     </div>
 
     <div class="indexPageLongDivClass">
 
-        <div class="paneDivRowClass w3-theme-l1 columnClass divBottomClass">
+        <div class="paneDivRowClass paneDivLightClass w3-theme-l1 columnClass divBottomClass">
 
-            <div class="googleLoginButtonClass"
-                 onclick="ft_googleSignInButton()"
-            >
+            <label>
 
-                Google Sign Up
-            </div>
-            <span>|</span>
-            <div>OR</div>
-            <span>|</span>
-            <form id="loginFormID"
-                  class="loginFormClass columnClass"
+                <p>1. Personal Info:</p>
+            </label>
+            <form id="signUpFormID"
+                  class="signUpFormClass columnClass"
                   method="post"
             >
 
                 <input type="text"
-                       placeholder="Please Enter Email or Username"
-                       id="loginEmailUsernameInputID"
+                       placeholder="Please Enter First Name"
+                       id="signUpFirstNameInputID"
+                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
                 />
-                <input type="password"
-                       placeholder="Please Enter Password"
-                       id="loginPasswordInputID"
+
+                <br/>
+
+                <input type="text"
+                       placeholder="Please Enter Last Name"
+                       id="signUpLastNameInputID"
+                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
                        required/>
 
-                <div class="loginButtonClass w3-theme-d5 w3-hover-theme"
-                     onclick="ft_loginButton()"
-                >
+                <br/>
 
-                    Register
-                </div>
+                <input type="text"
+                       placeholder="Please Enter Username"
+                       id="signUpUsernameInputID"
+                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                       required/>
+            </form>
+        </div>
+
+        <div class="paneDivRowClass paneDivLightClass w3-theme-l1 columnClass divBottomClass">
+
+            <label>
+
+                <p>2. Login Credentials:</p>
+            </label>
+            <form id="signUpFormID"
+                  class="signUpFormClass columnClass"
+                  method="post"
+            >
+
+                <input type="text"
+                       placeholder="Please Enter Email"
+                       id="signUpEmailInputID"
+                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                />
+
+                <br/>
+
+                <input type="password"
+                       placeholder="Please Enter Password"
+                       id="signUpPasswordInputID"
+                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                       required/>
+
+                <br/>
+
+                <input type="password"
+                       placeholder="Please Re-Enter Password"
+                       id="signUpValidatePasswordInputID"
+                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                       required/>
             </form>
         </div>
 
         <div class="paneDivRowClass w3-theme-l1 columnClass divBottomClass">
 
-            <div class="googleLoginButtonClass"
-                 onclick="ft_googleSignInButton()"
+            <div class="signUpButtonClass w3-theme-d5 w3-hover-theme"
+                 onclick="ft_signUpButton()"
+            >
+
+                Sign Up
+            </div>
+
+            <br/>
+            <div>OR</div>
+            <br/>
+
+            <div class="googleLoginButtonClass upperCaseClass"
+                 onclick="ft_googleSignUpButton()"
             >
 
                 Google Sign Up
             </div>
-            <span>|</span>
-            <div>OR</div>
-            <span>|</span>
-            <form id="loginFormID"
-                  class="loginFormClass columnClass"
-                  method="post"
-            >
-
-                <input type="text"
-                       placeholder="Please Enter Email or Username"
-                       id="loginEmailUsernameInputID"
-                />
-                <input type="password"
-                       placeholder="Please Enter Password"
-                       id="loginPasswordInputID"
-                       required/>
-
-                <div class="loginButtonClass w3-theme-d5 w3-hover-theme"
-                     onclick="ft_loginButton()"
-                >
-
-                    Register
-                </div>
-            </form>
-        </div>
-
-        <div class="paneDivRowClass w3-theme-l1 columnClass divBottomClass">
-
-            <div class="googleLoginButtonClass"
-                 onclick="ft_googleSignInButton()"
-            >
-
-                Google Sign Up
-            </div>
-            <span>|</span>
-            <div>OR</div>
-            <span>|</span>
-            <form id="loginFormID"
-                  class="loginFormClass columnClass"
-                  method="post"
-            >
-
-                <input type="text"
-                       placeholder="Please Enter Email or Username"
-                       id="loginEmailUsernameInputID"
-                />
-                <input type="password"
-                       placeholder="Please Enter Password"
-                       id="loginPasswordInputID"
-                       required/>
-
-                <div class="loginButtonClass w3-theme-d5 w3-hover-theme"
-                     onclick="ft_loginButton()"
-                >
-
-                    Register
-                </div>
-            </form>
         </div>
     </div>
 </div>

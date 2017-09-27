@@ -51,6 +51,9 @@
         <script src="sources/backEnd/engines/controllers/ajaxController.js"
                 type="text/javascript"
         ></script>
+        <script src="resources/libs/jQuery/jquery-3.2.1.js"
+                type="text/javascript"
+        ></script>
 
         <script src="resources/debuggers/jsDebugger.js"
                 type="text/javascript"

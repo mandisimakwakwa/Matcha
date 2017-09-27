@@ -42,11 +42,27 @@ function ft_menuButton() {
 
 function ft_loginButton() {
 
-    console.log("Login Button Pressed.")
+    console.log("Login Button Pressed.");
+}
+
+function ft_loginScrollButton() {
+
+    $(document).ready(function (){
+        $("#loginScrollButtonID").click(function (){
+            $('html, body').animate({
+                scrollTop: $(".indexPage2DivClass").offset().top
+            }, 2000);
+        });
+    });
 }
 
 function ft_signUpButton() {
 
     console.log("Sign Up Button Pressed");
+}
+
+function ft_googleSignUpButton() {
+
+    console.log("Goolge Sign Up Button Pressed");
 }
 
