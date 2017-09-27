@@ -235,7 +235,7 @@
         </div>
     </div>
 
-    <div class="paneDivRowClass divDebugClassOne">
+    <div class="paneDivClass w3-theme-l1">
 
         Successful Matches
     </div>

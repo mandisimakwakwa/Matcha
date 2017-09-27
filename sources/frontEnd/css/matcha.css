@@ -65,7 +65,7 @@
         align-items: center;
 
         /* Dimensions */
-        min-width: 100%;
+        min-width: 100vw;
         min-height: 30vh;
         padding: 50px 0px;
 
