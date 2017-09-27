@@ -172,6 +172,8 @@
         .lightBorderClass {
 
             border: thick solid snow;
+            filter: blur(15);
+            opacity: .45;
         }
 
         .cardClass {
@@ -219,6 +221,18 @@
         align-items: center;
         min-width: 60%;
     }
+
+        .fillerPaddingClass {
+
+            padding: 40px;
+            opacity: .65;
+        }
+
+        .roundBorderDivClass {
+
+            border-radius: 70px;
+            margin: 50px;
+        }
 
     .rowClass {
 
@@ -313,5 +327,19 @@
     0%, 66.66% { left: -100%; opacity: 0; }
     74.96%, 91.62% { left: 50%; opacity: 1; }
     100% { left: 100%; opacity: 0; }
+}
+
+.emailDivIconTextClass {
+
+    color: silver;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.iconClass {
+
+    width: 5px;
+    height: 5px;
 }
 /*====================================================================================================================*/

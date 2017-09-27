@@ -18,7 +18,8 @@
                 Login
             </div>
             <div class="signUpButtonClass w3-hover-theme"
-                 onclick="ft_signUpButton()"
+                 id="signUpScrollButtonID"
+                 onclick="ft_signUpScrollButton()"
             >
 
                 Sign Up
@@ -190,13 +191,16 @@
     </div>
     </div>
 
-    <div class="indexPage3DivClass">
+    <div class="indexPage3DivClass"
+         id="indexPage3DivID"
+    >
 
         <div class="paneDivClass columnClass">
 
             <label>
 
                 <h3><b>Last Added</b></h3>
+                <hr/>
             </label>
 
             <div class="rowClass">
@@ -254,26 +258,34 @@
         </div>
     </div>
 
-    <div class="indexPage4DivClass rowClass">
+    <div class="indexPage4DivClass columnClass">
 
-        <div class="cardClass lightBorderClass">
+        <div class="fillerPaddingClass w3-hover-theme roundBorderDivClass pointerClass"
+             id="upArrowButtonID"
+             onclick="ft_pageUpScrollButton()"
+        >
 
-            About
+            <i class="material-icons" style="font-size:48px;">
+
+                keyboard_arrow_up
+            </i>
         </div>
 
-        <div class="cardClass lightBorderClass">
+        <div class="rowClass">
 
-            Linkd In
-        </div>
+            <div class="cardClass lightBorderClass w3-hover-theme columnClass">
 
-        <div class="cardClass lightBorderClass">
+                <i class="material-icons fillerPaddingClass">
 
-            Github
-        </div>
+                    info
+                </i>
+                About
+            </div>
 
-        <div class="cardClass lightBorderClass">
+            <div class="cardClass lightBorderClass w3-hover-theme columnClass">
 
-            YouTube
+                Github
+            </div>
         </div>
     </div>
 

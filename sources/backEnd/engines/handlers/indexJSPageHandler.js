@@ -56,6 +56,28 @@ function ft_loginScrollButton() {
     });
 }
 
+function ft_pageUpScrollButton() {
+
+    $(document).ready(function (){
+        $("#upArrowButtonID").click(function (){
+            $('html, body').animate({
+                scrollTop: $(".indexPage1DivClass").offset().top
+            }, 2000);
+        });
+    });
+}
+
+function ft_signUpScrollButton() {
+
+    $(document).ready(function (){
+        $("#signUpScrollButtonID").click(function (){
+            $('html, body').animate({
+                scrollTop: $(".indexPage2DivClass").offset().top
+            }, 2000);
+        });
+    });
+}
+
 function ft_signUpButton() {
 
     console.log("Sign Up Button Pressed");
