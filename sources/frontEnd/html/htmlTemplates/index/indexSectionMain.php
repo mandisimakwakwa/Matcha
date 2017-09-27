@@ -192,8 +192,53 @@
 
 <div class="indexPage3DivClass">
 
-    <div>Div One</div>
-    <div>Div Two</div>
+    <div class="paneDivClass columnClass">
+
+        <label>
+
+            <h3><b>Last Added</b></h3>
+        </label>
+
+        <div class="rowClass">
+
+            <div class="cardClass w3-theme-d2 w3-hover-theme columnClass pointerClass">
+
+                <img src="resources/images/profileSamples/propicEveComplete.png"
+                     style="width:100%; height: 80%"
+                />
+                <h3><b>Jane Doe</b></h3>
+            </div>
+
+            <div class="cardClass w3-theme-d2 w3-hover-theme columnClass pointerClass">
+
+                <img src="resources/images/profileSamples/propicAdamComplete.png"
+                     style="width:100%; height: 80%"
+                />
+                <h3><b>John Doe</b></h3>
+            </div>
+
+            <div class="cardClass w3-theme-d2 w3-hover-theme columnClass pointerClass">
+
+                <img src="resources/images/profileSamples/propicEveComplete.png"
+                     style="width:100%; height: 80%"
+                />
+                <h3><b>Jane Doe</b></h3>
+            </div>
+
+            <div class="cardClass w3-theme-d2 w3-hover-theme columnClass pointerClass">
+
+                <img src="resources/images/profileSamples/propicAdamComplete.png"
+                     style="width:100%; height: 80%"
+                />
+                <h3><b>John Doe</b></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="paneDivRowClass divDebugClassOne">
+
+        Successful Matches
+    </div>
 </div>
 
 <div class="indexPage4DivClass">
