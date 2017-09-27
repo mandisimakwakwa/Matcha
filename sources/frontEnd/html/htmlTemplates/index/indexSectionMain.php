@@ -243,17 +243,17 @@
 
             <div class="item-1">
 
-                Rhandzo ya munhu i yena
+                Let's help you find LOVE
             </div>
 
             <div class="item-2">
 
-                Ndzi ta ku komba xancila wa bulubulu
+                And your creative side
             </div>
 
             <div class="item-3">
 
-                Mundzuku i siku la Rhandzo
+                In STYLE.
             </div>
         </div>
     </div>
