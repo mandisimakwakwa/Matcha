@@ -76,6 +76,7 @@
 
         /* Element Styles */
         filter: blur(0.79px);
+        opacity: 0.9;
 
         /* Animation */
     }
