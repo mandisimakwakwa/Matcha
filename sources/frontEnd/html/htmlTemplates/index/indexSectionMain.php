@@ -43,206 +43,238 @@
 
 <div class="indexPage2DivClass">
 
-    <div class="indexPageLongDivClass paneIndexLoginDivClass">
+        <div class="indexPageLongDivClass paneIndexLoginDivClass">
 
-        <div class="textDivClass indexLoginDivClass w3-theme-d2 columnClass">
+            <div class="textDivClass indexLoginDivClass w3-theme-d2 columnClass">
 
-            <div class="googleLoginButtonClass upperCaseClass"
-                 onclick="ft_googleSignInButton()"
-            >
-
-                Google
-            </div>
-            <br/>
-            <div>OR</div>
-            <br/>
-            <form id="loginFormID"
-                  class="loginFormClass columnClass"
-                  method="post"
-            >
-
-                <input type="text"
-                       placeholder="Please Enter Email or Username"
-                       id="loginEmailUsernameInputID"
-                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
-                />
-
-                <br/>
-
-                <input type="password"
-                       placeholder="Please Enter Password"
-                       id="loginPasswordInputID"
-                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
-                required/>
-
-                <br/>
-
-                <div class="loginButtonClass w3-theme-d5 w3-hover-theme"
-                     onclick="ft_loginButton()"
+                <div class="googleLoginButtonClass upperCaseClass"
+                     onclick="ft_googleSignInButton()"
                 >
 
-                    Login
+                    Google
                 </div>
-            </form>
+                <br/>
+                <div>OR</div>
+                <br/>
+                <form id="loginFormID"
+                      class="loginFormClass columnClass"
+                      method="post"
+                >
 
-            <br/>
-            <a href="#"
-               class="forgotPasswordClass"
-            >
+                    <input type="text"
+                           placeholder="Please Enter Email or Username"
+                           id="loginEmailUsernameInputID"
+                           class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                    />
 
-                Forgot Password?
-            </a>
+                    <br/>
+
+                    <input type="password"
+                           placeholder="Please Enter Password"
+                           id="loginPasswordInputID"
+                           class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                    required/>
+
+                    <br/>
+
+                    <div class="loginButtonClass w3-theme-d5 w3-hover-theme"
+                         onclick="ft_loginButton()"
+                    >
+
+                        Login
+                    </div>
+                </form>
+
+                <br/>
+                <a href="#"
+                   class="forgotPasswordClass"
+                >
+
+                    Forgot Password?
+                </a>
+            </div>
         </div>
+
+        <div class="indexPageLongDivClass w3-theme-l1">
+
+            <div class="paneDivRowClass paneDivLightClass  columnClass divBottomClass">
+
+                <label>
+
+                    <p>1. Personal Info:</p>
+                </label>
+                <form id="signUpFormID"
+                      class="signUpFormClass columnClass"
+                      method="post"
+                >
+
+                    <input type="text"
+                           placeholder="Please Enter First Name"
+                           id="signUpFirstNameInputID"
+                           class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                    />
+
+                    <br/>
+
+                    <input type="text"
+                           placeholder="Please Enter Last Name"
+                           id="signUpLastNameInputID"
+                           class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                           required/>
+
+                    <br/>
+
+                    <input type="text"
+                           placeholder="Please Enter Username"
+                           id="signUpUsernameInputID"
+                           class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                           required/>
+                </form>
+            </div>
+
+            <div class="paneDivRowClass paneDivLightClass w3-theme-l1 columnClass divBottomClass">
+
+                <label>
+
+                    <p>2. Login Credentials:</p>
+                </label>
+                <form id="signUpFormID"
+                      class="signUpFormClass columnClass"
+                      method="post"
+                >
+
+                    <input type="text"
+                           placeholder="Please Enter Email"
+                           id="signUpEmailInputID"
+                           class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                    />
+
+                    <br/>
+
+                    <input type="password"
+                           placeholder="Please Enter Password"
+                           id="signUpPasswordInputID"
+                           class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                           required/>
+
+                    <br/>
+
+                    <input type="password"
+                           placeholder="Please Re-Enter Password"
+                           id="signUpValidatePasswordInputID"
+                           class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                           required/>
+                </form>
+            </div>
+
+            <div class="paneDivRowClass w3-theme-l1 columnClass divBottomClass">
+
+                <div class="signUpButtonClass w3-theme-d5 w3-hover-theme"
+                     onclick="ft_signUpButton()"
+                >
+
+                    Sign Up
+                </div>
+
+                <br/>
+                <div>OR</div>
+                <br/>
+
+                <div class="googleLoginButtonClass upperCaseClass"
+                     onclick="ft_googleSignUpButton()"
+                >
+
+                    Google Sign Up
+                </div>
+            </div>
+    </div>
     </div>
 
-    <div class="indexPageLongDivClass w3-theme-l1">
+    <div class="indexPage3DivClass">
 
-        <div class="paneDivRowClass paneDivLightClass  columnClass divBottomClass">
+        <div class="paneDivClass columnClass">
 
             <label>
 
-                <p>1. Personal Info:</p>
+                <h3><b>Last Added</b></h3>
             </label>
-            <form id="signUpFormID"
-                  class="signUpFormClass columnClass"
-                  method="post"
-            >
 
-                <input type="text"
-                       placeholder="Please Enter First Name"
-                       id="signUpFirstNameInputID"
-                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
-                />
+            <div class="rowClass">
 
-                <br/>
+                <div class="cardClass w3-theme-d2 w3-hover-theme columnClass pointerClass">
 
-                <input type="text"
-                       placeholder="Please Enter Last Name"
-                       id="signUpLastNameInputID"
-                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
-                       required/>
+                    <img src="resources/images/profileSamples/propicEveComplete.png"
+                         style="width:100%; height: 80%"
+                    />
+                    <h3><b>Jane Doe</b></h3>
+                </div>
 
-                <br/>
+                <div class="cardClass w3-theme-d2 w3-hover-theme columnClass pointerClass">
 
-                <input type="text"
-                       placeholder="Please Enter Username"
-                       id="signUpUsernameInputID"
-                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
-                       required/>
-            </form>
-        </div>
+                    <img src="resources/images/profileSamples/propicAdamComplete.png"
+                         style="width:100%; height: 80%"
+                    />
+                    <h3><b>John Doe</b></h3>
+                </div>
 
-        <div class="paneDivRowClass paneDivLightClass w3-theme-l1 columnClass divBottomClass">
+                <div class="cardClass w3-theme-d2 w3-hover-theme columnClass pointerClass">
 
-            <label>
+                    <img src="resources/images/profileSamples/propicEveComplete.png"
+                         style="width:100%; height: 80%"
+                    />
+                    <h3><b>Jane Doe</b></h3>
+                </div>
 
-                <p>2. Login Credentials:</p>
-            </label>
-            <form id="signUpFormID"
-                  class="signUpFormClass columnClass"
-                  method="post"
-            >
+                <div class="cardClass w3-theme-d2 w3-hover-theme columnClass pointerClass">
 
-                <input type="text"
-                       placeholder="Please Enter Email"
-                       id="signUpEmailInputID"
-                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
-                />
-
-                <br/>
-
-                <input type="password"
-                       placeholder="Please Enter Password"
-                       id="signUpPasswordInputID"
-                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
-                       required/>
-
-                <br/>
-
-                <input type="password"
-                       placeholder="Please Re-Enter Password"
-                       id="signUpValidatePasswordInputID"
-                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
-                       required/>
-            </form>
-        </div>
-
-        <div class="paneDivRowClass w3-theme-l1 columnClass divBottomClass">
-
-            <div class="signUpButtonClass w3-theme-d5 w3-hover-theme"
-                 onclick="ft_signUpButton()"
-            >
-
-                Sign Up
-            </div>
-
-            <br/>
-            <div>OR</div>
-            <br/>
-
-            <div class="googleLoginButtonClass upperCaseClass"
-                 onclick="ft_googleSignUpButton()"
-            >
-
-                Google Sign Up
+                    <img src="resources/images/profileSamples/propicAdamComplete.png"
+                         style="width:100%; height: 80%"
+                    />
+                    <h3><b>John Doe</b></h3>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
-<div class="indexPage3DivClass">
+        <div class="paneDivClass w3-theme-l1 rowClass">
 
-    <div class="paneDivClass columnClass">
+            <div class="item-1">
 
-        <label>
-
-            <h3><b>Last Added</b></h3>
-        </label>
-
-        <div class="rowClass">
-
-            <div class="cardClass w3-theme-d2 w3-hover-theme columnClass pointerClass">
-
-                <img src="resources/images/profileSamples/propicEveComplete.png"
-                     style="width:100%; height: 80%"
-                />
-                <h3><b>Jane Doe</b></h3>
+                Rhandzo ya munhu i yena
             </div>
 
-            <div class="cardClass w3-theme-d2 w3-hover-theme columnClass pointerClass">
+            <div class="item-2">
 
-                <img src="resources/images/profileSamples/propicAdamComplete.png"
-                     style="width:100%; height: 80%"
-                />
-                <h3><b>John Doe</b></h3>
+                Ndzi ta ku komba xancila wa bulubulu
             </div>
 
-            <div class="cardClass w3-theme-d2 w3-hover-theme columnClass pointerClass">
+            <div class="item-3">
 
-                <img src="resources/images/profileSamples/propicEveComplete.png"
-                     style="width:100%; height: 80%"
-                />
-                <h3><b>Jane Doe</b></h3>
-            </div>
-
-            <div class="cardClass w3-theme-d2 w3-hover-theme columnClass pointerClass">
-
-                <img src="resources/images/profileSamples/propicAdamComplete.png"
-                     style="width:100%; height: 80%"
-                />
-                <h3><b>John Doe</b></h3>
+                Mundzuku i siku la Rhandzo
             </div>
         </div>
     </div>
 
-    <div class="paneDivClass w3-theme-l1">
+    <div class="indexPage4DivClass rowClass">
 
-        Successful Matches
+        <div class="cardClass lightBorderClass">
+
+            About
+        </div>
+
+        <div class="cardClass lightBorderClass">
+
+            Linkd In
+        </div>
+
+        <div class="cardClass lightBorderClass">
+
+            Github
+        </div>
+
+        <div class="cardClass lightBorderClass">
+
+            YouTube
+        </div>
     </div>
-</div>
 
-<div class="indexPage4DivClass">
-
-    <div>Div One</div>
-    <div>Div Two</div>
 </div>

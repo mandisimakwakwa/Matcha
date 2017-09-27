@@ -169,6 +169,11 @@
             border: none;
         }
 
+        .lightBorderClass {
+
+            border: thick solid snow;
+        }
+
         .cardClass {
 
             /* Display Layer */
@@ -180,7 +185,6 @@
             width: 20vw;
             height: 40vh;
             margin: 10px;
-            padding: 10px;
 
             /* Text Styles */
             text-align: center;
@@ -262,4 +266,52 @@
     .w3-hover-theme:hover {color:#fff !important; background-color:#795548 !important}
     .w3-hover-text-theme:hover {color:#795548 !important}
     .w3-hover-border-theme:hover {border-color:#795548 !important}
+
+.item-1, .item-2, .item-3 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 100%;
+    margin: 5px;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.item-1 {
+
+    animation-name: anim-1;
+}
+
+.item-2 {
+
+    animation-name: anim-2;
+}
+
+.item-3 {
+
+    animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+
+    0%, 8.3% { left: -100%; opacity: 0; }
+    8.3%,25% { left: 50%; opacity: 1; }
+    33.33%, 100% { left: 100%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+
+    0%, 33.33% { left: -100%; opacity: 0; }
+    41.63%, 58.29% { left: 50%; opacity: 1; }
+    66.66%, 100% { left: 100%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+
+    0%, 66.66% { left: -100%; opacity: 0; }
+    74.96%, 91.62% { left: 50%; opacity: 1; }
+    100% { left: 100%; opacity: 0; }
+}
 /*====================================================================================================================*/
