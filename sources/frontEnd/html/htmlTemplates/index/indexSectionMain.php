@@ -88,7 +88,7 @@
 
                 <br/>
                 <a href="#"
-                   class="forgotPasswordClass"
+                   class="forgotPasswordClass w3-hover-theme"
                 >
 
                     Forgot Password?
