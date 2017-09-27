@@ -95,9 +95,9 @@
         </div>
     </div>
 
-    <div class="indexPageLongDivClass">
+    <div class="indexPageLongDivClass w3-theme-l1">
 
-        <div class="paneDivRowClass paneDivLightClass w3-theme-l1 columnClass divBottomClass">
+        <div class="paneDivRowClass paneDivLightClass  columnClass divBottomClass">
 
             <label>
 

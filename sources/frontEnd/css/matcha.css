@@ -165,7 +165,8 @@
 
         .leftAlignTextClass {
 
-            text-align: left; !important;
+            display: flex;
+            text-align: right; !important;
         }
 
         .borderNoneClass {

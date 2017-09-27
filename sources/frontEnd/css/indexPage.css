@@ -217,10 +217,14 @@
 
                     /* Dimensions */
                     flex: 1;
-                    min-width: 100%;
+                    min-width: 100vw;
+                    margin: 19px;
+                    padding: 0px;
 
                     /* Text Styles */
                     /* Element Styles */
+                    opacity: 0.9;
+
                     /* Animation */
                 }
 
