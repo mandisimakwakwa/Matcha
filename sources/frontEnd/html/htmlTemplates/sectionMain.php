@@ -1,7 +1,18 @@
+<?php
+
+    $pageName  = ft_getCurrentFilename();
+?>
+
 <section class="section">
 
     <?php
 
-        include $indexSectionMainTemplate;
+        if ($pageName == "index") {
+
+            include $indexSectionMainTemplate;
+        } elseif ($pageName == "main") {
+
+            include $mainSectionMainTemplate;
+        }
     ?>
 </section>

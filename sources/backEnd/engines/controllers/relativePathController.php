@@ -30,6 +30,7 @@
         $footerTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/footer.php";
             //HTML Templates Level 2
             $indexSectionMainTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/index/indexSectionMain.php";
+            $mainSectionMainTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/main/mainSectionMain.php";
 
         $indexLayout = ServerRoot . "sources/frontEnd/html/htmlLayouts/indexLayout.php";
         $mainLayout = ServerRoot . "sources/frontEnd/html/htmlLayouts/mainLayout.php";
