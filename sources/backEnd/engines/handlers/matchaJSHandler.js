@@ -23,3 +23,18 @@ function ft_outsideClickCloseModal() {
         }
     }
 }
+
+function ft_searchButton() {
+
+    console.log("The search button has been pressed.");
+}
+
+function ft_notificationsPageScrollButton() {
+
+    console.log("The Notifications button has been pressed.");
+}
+
+function ft_signOutButton() {
+
+    console.log("Sign Out Button Pressed.");
+}

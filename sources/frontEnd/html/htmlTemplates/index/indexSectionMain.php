@@ -115,7 +115,7 @@
                 <input type="text"
                        placeholder="Please Enter Username"
                        id="signUpUsernameInputID"
-                       class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
+                       class="w3-theme-l1 w3-hover-text-theme"
                        required/>
             </form>
         </div>
