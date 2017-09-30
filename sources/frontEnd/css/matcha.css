@@ -10,45 +10,21 @@
 /* Element Styles */
 /* Animation */
 
-    /* CSS Comma Separator means AND */
     html, body {
 
         /* Display Layer */
-        /*display: flex;*/
+        display: flex;
 
         /* Dimensions */
-        /*min-height: 100%;*/
-        margin: 0px;
-        padding: 0px;
+        margin: 0px 0px; !important;
+        padding: 0px 0px; !important;
 
         /* Text Styles */
-        font-size: 20px;
-        font-family: "Lato", sans-serif;
-        font-weight: 500;
-        line-height: 1.8em;
-        color:#fff;
+        color: #ececec
 
         /* Element Styles */
         /* Animation */
     }
-
-        body {
-
-            /* Display Layer */
-            /* Dimensions */
-            margin: 0px;
-            padding: 0px;
-            /* Text Styles */
-            /* Element Styles */
-            /* Animation */
-        }
-/*====================================================================================================================*/
-/*
-    //==========================\\
-    ||      Header Styling      ||
-    \\==========================//
-*/
-
 /*====================================================================================================================*/
 /*
     //==========================\\
@@ -56,203 +32,216 @@
     \\==========================//
 */
 
-    .pageOneDivClass {
-
-        /* Display Layer */
-        display: flex;
-        flex: 1 100%;
-
-        /* Dimensions */
-        /* Text Styles */
-        /* Element Styles */
-        /* Animation */
-    }
-
-    .pageTwoDivClass {
-
-        /* Display Layer */
-        display: flex;
-        flex: 1 100%;
-
-        /* Dimensions */
-        /* Text Styles */
-        /* Element Styles */
-        /* Animation */
-    }
-
-    .pageThreeDivClass {
-
-        /* Display Layer */
-        display: flex;
-        flex: 1 100%;
-
-        /* Dimensions */
-        /* Text Styles */
-        /* Element Styles */
-        /* Animation */
-    }
-
-    .pageFourDivClass {
-
-        /* Display Layer */
-        display: flex;
-        flex: 1 100%;
-
-        /* Dimensions */
-        /* Text Styles */
-        /* Element Styles */
-        /* Animation */
-    }
-
-    .paneDivClass {
-
-        /* Display Layer */
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-
-        /* Dimensions */
-        min-width: 100vw;
-        min-height: 30vh;
-        padding: 50px 0px;
-
-        /* Text Styles */
-        text-align: center;
-        letter-spacing: 5px;
-        text-transform: uppercase;
-
-        /* Element Styles */
-        filter: blur(0.79px);
-        opacity: 0.9;
-
-        /* Animation */
-    }
-
-    .paneDivRowClass {
+    div.bodyDivClass {
 
         /* Display Layer */
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-flow: column;
 
         /* Dimensions */
-        /*min-width: 45%;*/
-        flex: 1 100%;
-        min-height: 35vh;
-        padding: 5px 0px;
-        margin: 5px 0px;
+        margin: 0px 0px; !important;
+        padding: 0px 0px; !important;
 
         /* Text Styles */
-        text-transform: uppercase;
-
         /* Element Styles */
-        filter: blur(0.79px);
+        background-color: #561a02;
 
         /* Animation */
     }
 
-    .paneDivLightClass {
-
-        color: #666; !important;
-    }
-
-    .paneDivDarkClass {
-
-        color: #ececec; !important;
-    }
-
-        .divBottomClass {
-
-            display: flex;
-            align-self: flex-end; !important;
-        }
-
-        .textDivClass {
-
-            /* Display Layer */
-
-            /* Dimensions */
-            padding: 25px 150px;
-
-            /* Text Styles */
-            text-align: center;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-
-            /* Element Styles */
-            filter: blur(0.79px);
-
-            /* Animation */
-        }
-
-            input {
-
-                /* Display Layer */
-
-                /* Dimensions */
-                width: 30vw;
-                padding: 5px;
-
-                /* Text Styles */
-                text-align: center;
-                letter-spacing: 2.5px;
-
-                /* Element Styles */
-                /* Animation */
-            }
-
-        .transClass {
-
-            background-color: transparent;
-        }
-
-        .upperCaseClass {
-
-            text-transform: uppercase;
-        }
-
-        .borderNoneClass {
-
-            border: none;
-        }
-
-        .lightBorderClass {
-
-            border: thick solid snow;
-            filter: blur(15);
-            opacity: .45;
-        }
-
-        .cardClass {
+        .section {
 
             /* Display Layer */
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: stretch;
+            flex-flow: column;
 
             /* Dimensions */
-            width: 20vw;
-            height: 40vh;
-            margin: 10px;
+            margin: 0px 0px; !important;
+            padding: 0px 0px; !important;
 
             /* Text Styles */
-            text-align: center;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-
             /* Element Styles */
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            border-radius: 15px;
-
             /* Animation */
         }
-/*====================================================================================================================*/
+
+            .pageOneDivClass, .pageTwoDivClass, .pageThreeDivClass, .pageFourDivClass {
+
+                /* Display Layer */
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+
+                /* Dimensions */
+                margin: 0px 0px; !important;
+                padding: 0px 0px; !important;
+                min-height: 100vh;
+
+                /* Text Styles */
+                /* Element Styles */
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+
+                /* Animation */
+            }
+
+            .pageOneDivClass {
+
+                /* Display Layer */
+                /* Dimensions */
+                min-width: 98vw;
+
+                /* Text Styles */
+                /* Element Styles */
+                background-image: url("../../../resources/images/backgrounds/index/indexBackground_1_AlphaThree.png");
+
+                /* Animation */
+            }
+
+                .fixedMenuBarClass {
+
+                    /* Display Layer */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 1;
+
+                    /* Dimensions */
+                    width: 100vw;
+
+                    /* Text Styles */
+                    /* Element Styles */
+                    /* Animation */
+                }
+
+                .paneNarrowDivClass {
+
+                    /* Display Layer */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    /* Dimensions */
+                    height: 25vh;
+                    width: 50vw;
+                    margin: 0px 0px;
+
+                    /* Text Styles */
+                    /* Element Styles */
+                    /* Animation */
+                }
+
+                .paneWideDivClass {
+
+                    /* Display Layer */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    /* Dimensions */
+                    width: 100vw;
+                    height: 25vh;
+
+                    /* Text Styles */
+                    /* Element Styles */
+                    /* Animation */
+                }
+
+            .pageTwoDivClass {
+
+                /* Display Layer */
+                /* Dimensions */
+                min-width: 98vw;
+
+                /* Text Styles */
+                /* Element Styles */
+                background-image: url("../../../resources/images/backgrounds/index/indexBackground_2_AlphaThree.png");
+
+                /* Animation */
+            }
+
+                input {
+
+                    width: 30vw;
+                    padding: 5px;
+                    text-align: center;
+                    letter-spacing: 2.5px;
+                    border: none;
+                }
+
+            .pageThreeDivClass {
+
+                /* Display Layer */
+                /* Dimensions */
+                min-width: 98vw;
+
+                /* Text Styles */
+                /* Element Styles */
+                background-image: url("../../../resources/images/backgrounds/index/indexBackground_3_AlphaOne.png");
+
+                /* Animation */
+            }
+
+            .pageFourDivClass {
+
+                /* Display Layer */
+                /* Dimensions */
+                min-width: 98vw;
+
+                /* Text Styles */
+                /* Element Styles */
+                background-image: url("../../../resources/images/backgrounds/index/indexBackground_1_AlphaThree.png");
+
+                /* Animation */
+            }
+
+            .cardClass {
+
+                /* Display Layer */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                /* Dimensions */
+                width: 20vw;
+                height: 40vh;
+                margin: 10px;
+
+                /* Text Styles */
+                /* Element Styles */
+                /* Animation */
+            }
 /*
-    //==========================\\
-    ||      Footer Styling      ||
-    \\==========================//
+.cardClass {
+
+    !* Display Layer *!
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    !* Dimensions *!
+    width: 20vw;
+    height: 40vh;
+    margin: 10px;
+
+    !* Text Styles *!
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    !* Element Styles *!
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 15px;
+
+    !* Animation *!
+}
 */
 
 /*====================================================================================================================*/
@@ -261,6 +250,20 @@
     ||      Extra Styling      ||
     \\==========================//
 */
+
+    @media (max-width: 568px) {
+
+        .pageOneDivClass, .pageTwoDivClass, .pageThreeDivClass, .pageFourDivClass {
+
+            /* Display Layer */
+            /* Dimensions */
+            /* Text Styles */
+            /* Element Styles */
+            background-attachment: scroll;
+
+            /* Animation */
+        }
+    }
 
     .fillerClass {
 
@@ -271,28 +274,27 @@
         min-width: 60%;
     }
 
-        .fillerPaddingClass {
-
-            padding: 40px;
-            opacity: .65;
-        }
-
-        .roundBorderDivClass {
-
-            border-radius: 70px;
-            margin: 50px;
-        }
-
-    .rowClass {
+    .divUserRegScrollClass {
 
         /* Display Layer */
         display: flex;
-        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
 
         /* Dimensions */
+        min-width: 20%;
+        padding: 0px 0px;
+        margin: 0px 25px;
+
         /* Text Styles */
         /* Element Styles */
         /* Animation */
+    }
+
+    .rowClass {
+
+        display: flex;
+        flex-flow: row;
     }
 
     .columnClass {
@@ -301,94 +303,148 @@
         flex-flow: column;
     }
 
-    .pointerClass {
+    .alignTopClass {
 
-        cursor: pointer;
+        display: flex;
+        align-self: flex-start;
+    }
+
+    .alignBottomClass {
+
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .alignContentCenterClass {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fullyOpaqueClass {
+
+        opacity: .7;
+    }
+
+    .semiOpaqueClass {
+
+        opacity: .85;
+    }
+
+    .slightlyOpaqueClass {
+
+        opacity: .9;
+    }
+
+    .flexOneClass {
+
+        display: flex;
+        flex: 1;
+    }
+
+    .centerDivsClass {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paddingFillerClass {
+
+        padding: 15px;
+    }
+
+    .paddingLargeFillerClass {
+
+        padding: 20px;
+    }
+
+    .maxDivHeightClass {
+
+        height: 100%;
+    }
+
+    /*Text Styling*/
+    .upperCaseClass {
+
+        text-transform: uppercase;
+    }
+
+    .lowerCaseClass {
+
+        text-transform: lowercase;
+    }
+
+    .textDecoNone {
+
+        text-decoration: none;
+    }
+
+    /*Buttons Styling*/
+    .lightButtonClass {
+
+        background-color: #b89588
+    }
+
+    .darkButtonClass {
+
+        background-color:#61443a;
+    }
+
+    .buttonClass {
+
+        /* Display Layer */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Dimensions */
+        width: 15vw;
+        height: 7vh;
+        margin: 15px;
+
+        /* Text Styles */
+        text-transform: none;
+
+        /* Element Styles */
+        /* Animation */
     }
 
     /*Color Themes*/
-    .w3-theme-l5 {color:#000 !important; background-color:#f8f4f3 !important}
-    .w3-theme-l4 {color:#000 !important; background-color:#e7dcd7 !important}
-    .w3-theme-l3 {color:#000 !important; background-color:#d0b8b0 !important}
-    .w3-theme-l2 {color:#fff !important; background-color: #b89588 !important}
-    .w3-theme-l1 {background-color:#a07261 !important}
-    .w3-theme-d1 {color:#fff !important; background-color:#6d4d41 !important}
-    .w3-theme-d2 {background-color:#61443a !important}
-    .w3-theme-d3 {color:#fff !important; background-color:#553c33 !important}
-    .w3-theme-d4 {color:#fff !important; background-color:#49332c !important}
-    .w3-theme-d5 {color:#fff !important; background-color:#3d2b24 !important}
 
-    .w3-theme-light {color:#000 !important; background-color:#f8f4f3 !important}
-    .w3-theme-dark {color:#fff !important; background-color:#3d2b24 !important}
-    .w3-theme-action {color:#fff !important; background-color:#3d2b24 !important}
+        /*Text Color Theme*/
+        .textDarkBackgroundClass {
 
-    .w3-theme {color:#fff !important; background-color:#795548 !important}
-    .w3-text-theme {color:#795548 !important}
-    .w3-border-theme {border-color:#795548 !important}
+            color: wheat; !important;
+        }
 
-    .w3-hover-theme:hover {color:#fff !important; background-color:#795548 !important}
-    .w3-hover-text-theme:hover {color:#795548 !important}
-    .w3-hover-border-theme:hover {border-color:#795548 !important}
+        .textLightBackgroundClass {
 
-.item-1, .item-2, .item-3 {
+            color: #474747; !important;
+        }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 100%;
-    margin: 5px;
-    animation-duration: 20s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
+        /*Background Color Theme*/
+        .w3-theme-l5 {color:#000 !important; background-color:#f8f4f3 !important}
+        .w3-theme-l4 {color:#000 !important; background-color:#e7dcd7 !important}
+        .w3-theme-l3 {color:#000 !important; background-color:#d0b8b0 !important}
+        .w3-theme-l2 {color:#fff !important; background-color: #b89588 !important}
+        .w3-theme-l1 {color: #474747; background-color:#a07261 !important}
+        .w3-theme-d1 {color:#fff !important; background-color:#6d4d41 !important}
+        .w3-theme-d2 {color: wheat; background-color:#61443a !important}
+        .w3-theme-d3 {color:#fff !important; background-color:#553c33 !important}
+        .w3-theme-d4 {color:#fff !important; background-color:#49332c !important}
+        .w3-theme-d5 {color:#fff !important; background-color:#3d2b24 !important}
 
-.item-1 {
+        .w3-theme-light {color:#000 !important; background-color:#f8f4f3 !important}
+        .w3-theme-dark {color:#fff !important; background-color:#3d2b24 !important}
+        .w3-theme-action {color:#fff !important; background-color:#3d2b24 !important}
 
-    animation-name: anim-1;
-}
+        .w3-theme {color:#fff !important; background-color:#795548 !important}
+        .w3-text-theme {color:#795548 !important}
+        .w3-border-theme {border-color:#795548 !important}
 
-.item-2 {
-
-    animation-name: anim-2;
-}
-
-.item-3 {
-
-    animation-name: anim-3;
-}
-
-@keyframes anim-1 {
-
-    0%, 8.3% { left: -100%; opacity: 0; }
-    8.3%,25% { left: 50%; opacity: 1; }
-    33.33%, 100% { left: 100%; opacity: 0; }
-}
-
-@keyframes anim-2 {
-
-    0%, 33.33% { left: -100%; opacity: 0; }
-    41.63%, 58.29% { left: 50%; opacity: 1; }
-    66.66%, 100% { left: 100%; opacity: 0; }
-}
-
-@keyframes anim-3 {
-
-    0%, 66.66% { left: -100%; opacity: 0; }
-    74.96%, 91.62% { left: 50%; opacity: 1; }
-    100% { left: 100%; opacity: 0; }
-}
-
-.emailDivIconTextClass {
-
-    color: silver;
-    font-size: 15px;
-    width: 100%;
-    text-align: center;
-}
-
-.iconClass {
-
-    width: 5px;
-    height: 5px;
-}
+        .w3-hover-theme:hover {color:#fff !important; background-color:#795548 !important}
+        .w3-hover-text-theme:hover {color:#795548 !important}
+        .w3-hover-border-theme:hover {border-color:#795548 !important}
 /*====================================================================================================================*/

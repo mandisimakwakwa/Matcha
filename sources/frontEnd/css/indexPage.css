@@ -9,32 +9,6 @@
 /* Text Styles */
 /* Element Styles */
 /* Animation */
-
-/*====================================================================================================================*/
-/*
-    //==========================\\
-    ||      Header Styling      ||
-    \\==========================//
-*/
-
-    /*.header {
-
-        !* Display Layer *!
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        !* Dimensions *!
-        !*flex: 1;*!
-        !*min-width: 99%;*!
-        !*padding: 5px;*!
-        padding: 0;
-        margin: 0;
-
-        !* Text Styles *!
-        !* Element Styles *!
-        !* Animation *!
-    }*/
 /*====================================================================================================================*/
 /*
     //==========================\\
@@ -42,278 +16,98 @@
     \\==========================//
 */
 
-    /* CSS syntax means div with class .bodyDivClass */
-    div.bodyDivClass {
 
+
+    .matchaTitleDivClass {
+
+        /* Display Layer */
         display: flex;
-        background-color: #561a02;
-        /*filter: blur(5px);*/
-        /*z-index: -1;```*/
         justify-content: center;
         align-items: center;
-        flex-flow: column;
-        margin: 0px;
-        padding: 0px;
-        /*min-height: 100%;*/
-        /*min-height: 95vh !important;*/
-        /*min-width: 95vw !important;*/
+        flex: 4;
+
+        /* Dimensions */
+        margin-top: 45px;
+
+        /* Text Styles */
+        /* Element Styles */
+        /* Animation */
     }
 
-        .section {
+    .matchaSloganDivClass {
+
+        /* Display Layer */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 4;
+
+        /* Dimensions */
+        /* Text Styles */
+        /* Element Styles */
+        /* Animation */
+    }
+
+    .loginFormDivClass {
+
+        /* Display Layer */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Dimensions */
+        max-width: 40vw;
+        max-height: 50vh;
+
+        /* Text Styles */
+        /* Element Styles */
+        /* Animation */
+    }
+
+        .loginFormClass {
 
             /* Display Layer */
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            flex-flow: column;
 
             /* Dimensions */
-            /*flex: 15;*/
-            /*min-width: 95%;*/
-            margin: 0px;
-            padding: 0px;
-
             /* Text Styles */
             /* Element Styles */
             /* Animation */
         }
 
-            .indexPage1DivClass, .indexPage2DivClass, .indexPage3DivClass, .indexPage4DivClass {
+     .lastAddedDivClass {
 
-                display: flex;
-                flex: 1;
-                min-height: 100vh;
-                justify-content: center;
-                flex-flow: column;
-                align-items: center;
-                position: relative;
-                /*opacity: .75;*/
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                /*background-color: transparent;*/
-                margin: 0;
-                padding: 0;
-                /*z-index: 2;*/
-                /*filter: blur(8px) saturate(3) invert(100);*/
-                /*filter: contrast(100);*/
-            }
+         /* Display Layer */
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex:  45;
 
-                .indexPageShortDivClass {
+         /* Dimensions */
+         min-height: 100%;
 
-                    /* Display Layer */
-                    display: flex;
-                    flex-flow: row;
-                    justify-content: center;
-                    align-items: center;
+         /* Text Styles */
+         /* Element Styles */
+         /* Animation */
+     }
 
-                    /* Dimensions */
-                    min-height: 15%;
-                    min-width: 95%;
-                    padding: 25px 0px;
-                    /*top: 0;*/
+    .aboutClass {
 
-                    /* Text Styles */
-                    /* Element Styles */
-                    /*position: fixed;*/
+        /* Display Layer */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex:  150;
 
-                    /* Animation */
-                }
+        /* Dimensions */
+        min-height: 100%;
 
-                    .indexLoginDivClass {
-
-                        /* Display Layer */
-
-                        /* Dimensions */
-                        min-width: 25%; !important;
-
-                        /* Text Styles */
-                        /* Element Styles */
-                        /* Animation */
-                    }
-
-                        .forgotPasswordClass {
-
-                            /* Display Layer */
-                            /* Dimensions */
-
-                            /* Text Styles */
-                            text-decoration: none;
-                            color: #3d2b24;
-
-                            /* Element Styles */
-                            /* Animation */
-                        }
-
-                    .menuButtonClass {
-
-                        /* Display Layer */
-                        /* Dimensions */
-                        margin: 5px;
-                        padding: 10px;
-
-                        /* Text Styles */
-                        /* Element Styles */
-                        background-color: black;
-                        /* Animation */
-                    }
-
-                    .loginButtonClass {
-
-                        /* Display Layer */
-                        /* Dimensions */
-                        margin: 5px;
-                        padding: 10px;
-
-                        /* Text Styles */
-                        /* Element Styles */
-                        cursor: pointer;
-                        /* Animation */
-                    }
-
-                    .loginScrollButtonClass {
-
-                        /* Display Layer */
-                        /* Dimensions */
-                        margin: 5px;
-                        padding: 10px;
-
-                        /* Text Styles */
-                        /* Element Styles */
-                        cursor: pointer;
-                        background-color: black;
-                        /* Animation */
-                    }
-
-                    .signUpButtonClass {
-
-                        /* Display Layer */
-                        /* Dimensions */
-                        margin: 5px;
-                        padding: 10px;
-
-                        /* Text Styles */
-                        /* Element Styles */
-                        background-color: black;
-                        /* Animation */
-                    }
-
-                    .loginMarkupMsgClass {
-
-                        /* Display Layer */
-
-                        /* Dimensions */
-
-                        /* Text Styles */
-                        /* Element Styles */
-                        /* Animation */
-                    }
-
-                .indexPageLongDivClass {
-
-                    /* Display Layer */
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    /* Dimensions */
-                    flex: 1;
-                    min-width: 100vw;
-                    margin: 19px;
-                    padding: 0px;
-
-                    /* Text Styles */
-                    /* Element Styles */
-                    opacity: 0.9;
-
-                    /* Animation */
-                }
-
-                    .paneIndexLoginDivClass {
-
-                        /* Display Layer */
-                        display: flex;
-                        justify-content: space-around;
-                        align-items: center;
-
-                        /* Dimensions */
-                        flex: 1;
-                        min-height: 100%;
-
-                        /* Text Styles */
-                        /* Element Styles */
-                        /* Animation */
-                    }
-
-                .googleLoginButtonClass {
-
-                    /* Display Layer */
-                    /* Dimensions */
-                    margin: 5px;
-                    padding: 10px 50px;
-
-                    /* Text Styles */
-                    text-transform: none;
-
-                    /* Element Styles */
-                    background-color: #ff2300;
-                    cursor: pointer;
-                    /* Animation */
-                }
-
-                    .googleLoginButtonClass:hover {
-
-                        /* Element Styles */
-                        background-color: #c00300;
-                    }
-
-                    .loginFormClass {
-
-                        /* Display Layer */
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        /* Dimensions */
-
-                        /* Text Styles */
-                        color: #ffffff;
-
-                        /* Element Styles */
-                        /* Animation */
-                    }
-
-            .indexPage1DivClass {
-
-                background-image: url("../../../resources/images/backgrounds/index/indexBackground_1_AlphaThree.png");
-                min-width: 98vw;
-            }
-
-            .indexPage2DivClass {
-
-                background-image: url("../../../resources/images/backgrounds/index/indexBackground_2_AlphaThree.png");
-                min-width: 95vw;
-            }
-
-            .indexPage3DivClass {
-
-                background-image: url("../../../resources/images/backgrounds/index/indexBackground_3_AlphaOne.png");
-                min-width: 95vw;
-            }
-
-            .indexPage4DivClass {
-
-                background-image: url("../../../resources/images/backgrounds/index/indexBackground_1_AlphaThree.png");
-                min-width: 98vw;
-            }
-/*====================================================================================================================*/
-/*
-    //==========================\\
-    ||      Footer Styling      ||
-    \\==========================//
-*/
-
+        /* Text Styles */
+        /* Element Styles */
+        /* Animation */
+    }
 /*====================================================================================================================*/
 /*
     //==========================\\
@@ -321,11 +115,127 @@
     \\==========================//
 */
 
-@media (max-width: 568px) {
+    /*Buttons Styling*/
 
-    .indexPage1DivClass, .indexPage2DivClass, .indexPage3DivClass, .indexPage4DivClass {
+    .scrollButtonClass {
 
-        background-attachment: scroll;
+        /* Display Layer */
+        display: flex;
+
+        /* Dimensions */
+        padding: 10px 25px;
+
+        /* Text Styles */
+        /* Element Styles */
+        /* Animation */
     }
-}
+
+    .signUpButtonClass {
+
+        /* Display Layer */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Dimensions */
+        width: 15vw;
+        height: 7vh;
+        margin: 15px;
+
+        /* Text Styles */
+        text-transform: none;
+
+        /* Element Styles */
+        /* Animation */
+    }
+
+    .googleLoginButtonClass {
+
+        /* Display Layer */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Dimensions */
+        width: 15vw;
+        height: 7vh;
+        margin: 15px;
+
+        /* Text Styles */
+        text-transform: none;
+
+        /* Element Styles */
+        background-color: #ff2300;
+
+        /* Animation */
+    }
+
+    .loginButtonClass {
+
+        /* Display Layer */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Dimensions */
+        width: 15vw;
+        height: 7vh;
+        margin: 15px;
+
+        /* Text Styles */
+        text-transform: none;
+
+        /* Element Styles */
+        /* Animation */
+    }
+
+    /*Animation Styling*/
+
+    .item-1, .item-2, .item-3 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 100%;
+        margin: 5px;
+        animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    .item-1 {
+
+        animation-name: anim-1;
+    }
+
+    .item-2 {
+
+        animation-name: anim-2;
+    }
+
+    .item-3 {
+
+        animation-name: anim-3;
+    }
+
+    @keyframes anim-1 {
+
+        0%, 8.3% { left: -100%; opacity: 0; }
+        8.3%,25% { left: 50%; opacity: 1; }
+        33.33%, 100% { left: 100%; opacity: 0; }
+    }
+
+    @keyframes anim-2 {
+
+        0%, 33.33% { left: -100%; opacity: 0; }
+        41.63%, 58.29% { left: 50%; opacity: 1; }
+        66.66%, 100% { left: 100%; opacity: 0; }
+    }
+
+    @keyframes anim-3 {
+
+        0%, 66.66% { left: -100%; opacity: 0; }
+        74.96%, 91.62% { left: 50%; opacity: 1; }
+        100% { left: 100%; opacity: 0; }
+    }
 /*====================================================================================================================*/

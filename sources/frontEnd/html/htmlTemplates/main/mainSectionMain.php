@@ -1,19 +1,19 @@
-<div class="pageOneClass divDebugClassOne">
+<div class="pageOneDivClass">
 
     Page One
 </div>
 
-<div class="pageTwoDivClass divDebugClassTwo">
+<div class="pageTwoDivClass">
 
     Page Two
 </div>
 
-<div class="pageThreeDivClass divDebugClassThree">
+<div class="pageThreeDivClass">
 
     Page Three
 </div>
 
-<div class="pageFourDivClass divDebugClassFour">
+<div class="pageFourDivClass">
 
     Page Four
 </div>
