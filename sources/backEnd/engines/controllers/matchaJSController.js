@@ -12,6 +12,22 @@ function ft_buttonController(switchNode) {
     }
 }
 
+/*Redirect to Main.php*/
+function ft_redirectController(destPage) {
+
+    switch (destPage) {
+
+        case "main":
+
+            window.location.href = "sources/frontEnd/html/htmlLayouts/main.php";
+            break;
+        case "index":
+
+            window.location.href = "../../../../index.php";
+            break;
+    }
+}
+
 //Debug
 function ft_matchaControllerDebugger() {
 

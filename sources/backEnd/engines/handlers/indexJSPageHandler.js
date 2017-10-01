@@ -37,7 +37,9 @@ function ft_menuButton() {
 
 function ft_loginButton() {
 
-    console.log("Login Button Pressed.");
+    var sourcePage = "login";
+
+    ft_submitHandler(sourcePage);
 }
 
 function ft_loginScrollButton() {
@@ -83,3 +85,20 @@ function ft_googleSignUpButton() {
     console.log("Goolge Sign Up Button Pressed");
 }
 
+function ft_sendLoginHTTPRequest() {
+
+    //Get Email From Register Form Client-Side
+    var httpLoginUsernameEmail = document.forms['loginFormID']['loginEmailUsernameInputID'].value;
+
+    //Get Password Form Client-Side
+    var httpLoginPassword = document.forms['loginFormID']['loginPasswordInputID'].value;
+
+    //Session State is Login
+    var params = {'httpLoginUsernameEmail' : httpLoginUsernameEmail, 'httpLoginPassword' : httpLoginPassword, 'SessionState' : "LOGIN"};
+
+    var handler = "sources/backEnd/engines/handlers/indexPHPPageHandler.php";
+
+    var switchNode = "login";
+
+    ft_sendHTTPRequest("POST", params, "", handler, switchNode);
+}

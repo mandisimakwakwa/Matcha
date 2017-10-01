@@ -5,14 +5,14 @@
         <div class="fillerClass"></div>
         <div class="divUserRegScrollClass w3-theme-l1 rowClass textDarkBackgroundClass">
 
-            <div class="scrollButtonClass darkButtonClass textDarkBackgroundClass w3-hover-theme"
+            <div class="scrollButtonClass cursorPointerToggleClass darkButtonClass textDarkBackgroundClass w3-hover-theme"
                  id="loginScrollButtonID"
                  onclick="ft_loginScrollButton()"
             >
 
                 <b>Login</b>
             </div>
-            <div class="scrollButtonClass darkButtonClass textDarkBackgroundClass w3-hover-theme"
+            <div class="scrollButtonClass cursorPointerToggleClass darkButtonClass textDarkBackgroundClass w3-hover-theme"
                  id="signUpScrollButtonID"
                  onclick="ft_signUpScrollButton()"
             >
@@ -78,7 +78,7 @@
                    class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
                    required/>
 
-            <div class="buttonClass w3-theme-d4 w3-hover-theme"
+            <div class="buttonClass w3-theme-d4 w3-hover-theme cursorPointerToggleClass"
                  onclick="ft_loginButton()"
             >
 

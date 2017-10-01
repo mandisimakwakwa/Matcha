@@ -35,7 +35,7 @@
             <div class="flexOneClass paddingFillerClass">
 
                 <div class="fillerClass"></div>
-                <div class="buttonClass darkButtonClass w3-hover-theme"
+                <div class="buttonClass darkButtonClass w3-hover-theme cursorPointerToggleClass"
                      onclick="ft_signOutButton()"
                 >
 

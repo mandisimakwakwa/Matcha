@@ -36,5 +36,39 @@ function ft_notificationsPageScrollButton() {
 
 function ft_signOutButton() {
 
-    console.log("Sign Out Button Pressed.");
+    var destPage = "index";
+
+    ft_redirectController(destPage);
+}
+
+function ft_submitHandler(sourcePage) {
+
+    var source = sourcePage;
+
+    if (source == "login") {
+
+        ft_sendLoginHTTPRequest();
+    } /*else if (sourcePage == "signUp") {
+
+        ft_sendSignUpHTTPRequest();
+    }*/
+}
+
+function ft_responseHandler(response, switchNode) {
+
+    if (response) {
+
+        var jsonResponse = JSON.parse(response);
+
+        switch (switchNode) {
+
+            case "login":
+
+                ft_loginCase(jsonResponse);
+                break;
+        }
+    } else {
+
+        console.log("No Responses Recieved!");
+    }
 }
