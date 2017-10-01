@@ -124,7 +124,10 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
             case "errorUserNull" :
 
                 $jsonObj = ft_sendErrorJSON($sourceContent);
-                break;*/
+                break;
+
+            I really tried.
+        */
         }
 
         if ($jsonObj) {
