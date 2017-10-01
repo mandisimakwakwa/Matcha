@@ -26,29 +26,49 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
         }
     }
 
+    //Validator function to check for injections
+    function ft_validator($userInputSample)
+    {
+
+        $userInputSample = trim($userInputSample);
+        $userInputSample = stripslashes($userInputSample);
+        $userInputSample = htmlspecialchars($userInputSample);
+
+        return $userInputSample;
+    }
+
     function ft_sessionStateLogin($dbConn, $decodedHTTPJSON) {
 
         //Set Sessions
-        $_SESSION['httpLoginEmail'] = ft_validator($decodedHTTPJSON['httpLoginEmail']);
+        $_SESSION['httpLoginUsernameEmail'] = ft_validator($decodedHTTPJSON['httpLoginUsernameEmail']);
         $_SESSION['httpLoginPassword'] = hash("sha256", ft_validator($decodedHTTPJSON['httpLoginPassword']));
         $_SESSION['confirmLogin'] = "1";
 
         //Retrieve User From DB
-        $httpLoginEmail = $_SESSION['httpLoginEmail'];
+
+        //Set DB Sessions
+
         $httpLoginPassword = $_SESSION['httpLoginPassword'];
+
+        if (filter_var($_SESSION['httpLoginUsernameEmail'], FILTER_VALIDATE_EMAIL)) {
+
+            $httpLoginEmail = $_SESSION['httpLoginUsernameEmail'];
+            $_SESSION['userDBEmail'] = ft_getUserDBEmailByEmail($dbConn, $httpLoginEmail, $httpLoginPassword);
+            $_SESSION['userDBUsername'] = ft_getUserDBUsernameByEmail($dbConn, $httpLoginEmail, $httpLoginPassword);
+            $_SESSION['userDBPassword'] = ft_getUserDBPasswordByEmail($dbConn, $httpLoginEmail, $httpLoginPassword);
+        } else {
+
+            $httpLoginUsername = $_SESSION['httpLoginUsernameEmail'];
+            $_SESSION['userDBEmail'] = ft_getUserDBEmailByUsername($dbConn, $httpLoginUsername, $httpLoginPassword);
+            $_SESSION['userDBUsername'] = ft_getUserDBUsernameByUsername($dbConn, $httpLoginUsername, $httpLoginPassword);
+            $_SESSION['userDBPassword'] = ft_getUserDBPassword($dbConn, $httpLoginUsername, $httpLoginPassword);
+        }
 
         //Session Set Error Log
         $_SESSION['errorLog'] = "Error Login and Password Don't Match";
 
-        //Create users Table & Set Auto Increment
-        ft_createUsersTable($dbConn);
 
-        //Set DB Sessions
-        $_SESSION['userDBEmail'] = ft_getUserDBEmail($dbConn, $httpLoginEmail, $httpLoginPassword);
-        $_SESSION['userDBUsername'] = ft_getUserDBUsername($dbConn, $httpLoginEmail, $httpLoginPassword);
-        $_SESSION['userDBPassword'] = ft_getUserDBPassword($dbConn, $httpLoginEmail, $httpLoginPassword);
-
-        if (($_SESSION['userDBEmail'] == $httpLoginEmail) && ($_SESSION['userDBPassword'] == $httpLoginPassword)) {
+        if ((($_SESSION['userDBEmail'] == $httpLoginEmail) || ($_SESSION['userDBUsername'] == $httpLoginUsername)) && ($_SESSION['userDBPassword'] == $httpLoginPassword)) {
 
             $confirmLoginJSONValue = $_SESSION['confirmLogin'];
             $switchNode = "login";
@@ -70,5 +90,58 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
                 ft_sendJSON($_SESSION['errorLog'], $switchNode);
             }
         }
+    }
+
+    //JSON Prep
+    function ft_sendJSON($sourceContent, $switchNode) {
+
+        switch ($switchNode) {
+
+            case "login" :
+
+                $jsonObj = ft_prepLoginJSON($sourceContent);
+                break;/*
+            case "imageSave" :
+
+                $jsonObj = ft_imageSaveJSON($sourceContent);
+                break;
+            case "imageMerge" :
+
+                $jsonObj = ft_imageMergeJSON($sourceContent);
+                break;
+            case "imageUpload" :
+
+                $jsonObj = ft_imageUploadJSON($sourceContent);
+                break;
+            case "imageComments" :
+
+                $jsonObj = ft_imageCommentsJSON($sourceContent);
+                break;
+            case "errorLog" :
+
+                $jsonObj = ft_sendErrorJSON($sourceContent);
+                break;
+            case "errorUserNull" :
+
+                $jsonObj = ft_sendErrorJSON($sourceContent);
+                break;*/
+        }
+
+        if ($jsonObj) {
+
+            $jsonEncode = json_encode($jsonObj, JSON_PRETTY_PRINT);
+            echo $jsonEncode;
+        } else {
+
+            echo "Hello";
+        }
+    }
+
+    function ft_prepLoginJSON($sourceContent) {
+
+        $confirmLoginJSONIndex = "confirmLogin";
+        $jsonObj = array($confirmLoginJSONIndex => $sourceContent);
+
+        return $jsonObj;
     }
 ?>

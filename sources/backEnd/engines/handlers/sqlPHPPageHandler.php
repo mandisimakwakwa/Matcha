@@ -84,4 +84,100 @@
         $dbQuery  = "ALTER TABLE users AUTO_INCREMENT=327";
         ft_queryExecute($dbConn, $dbQuery);
     }
+
+    //Get User Email from DB via Email
+    function ft_getUserDBEmailByEmail($dbConn, $httpEmail, $httpPassword) {
+
+        $dbQuery = "SELECT email FROM users WHERE email=:email AND password=:password";
+
+        $preparedStatement = $dbConn->prepare($dbQuery);
+        $preparedStatement->bindParam(':email', $httpEmail);
+        $preparedStatement->bindParam(':password', $httpPassword);
+        $preparedStatement->execute();
+
+        $queryResult = $preparedStatement->fetch();
+        $dbEmail = $queryResult[0];
+
+        return $dbEmail;
+    }
+
+    //Get User Username from DB via Email
+    function ft_getUserDBUsernameByEmail($dbConn, $httpEmail, $httpPassword) {
+
+        $dbQuery = "SELECT username FROM users WHERE email=:email AND password=:password";
+
+        $preparedStatement = $dbConn->prepare($dbQuery);
+        $preparedStatement->bindParam(':email', $httpEmail);
+        $preparedStatement->bindParam(':password', $httpPassword);
+        $preparedStatement->execute();
+
+        $queryResult = $preparedStatement->fetch();
+        $dbUsername = ucfirst(strtolower($queryResult[0]));
+
+        return $dbUsername;
+    }
+
+    //Get User Email from DB via Usernames
+    function ft_getUserDBEmailByUsername($dbConn, $httpUsername, $httpPassword) {
+
+        $dbQuery = "SELECT email FROM users WHERE username=:username AND password=:password";
+
+        $preparedStatement = $dbConn->prepare($dbQuery);
+        $preparedStatement->bindParam(':username', $httpUsername);
+        $preparedStatement->bindParam(':password', $httpPassword);
+        $preparedStatement->execute();
+
+        $queryResult = $preparedStatement->fetch();
+        $dbEmail = $queryResult[0];
+
+        return $dbEmail;
+    }
+
+    //Get User Username from DB via Username
+    function ft_getUserDBUsernameByUsername($dbConn, $httpUsername, $httpPassword) {
+
+        $dbQuery = "SELECT username FROM users WHERE username=:username AND password=:password";
+
+        $preparedStatement = $dbConn->prepare($dbQuery);
+        $preparedStatement->bindParam(':username', $httpUsername);
+        $preparedStatement->bindParam(':password', $httpPassword);
+        $preparedStatement->execute();
+
+        $queryResult = $preparedStatement->fetch();
+        $dbUsername = ucfirst(strtolower($queryResult[0]));
+
+        return $dbUsername;
+    }
+
+    //Get User Password from DB via Email
+    function ft_getUserDBPasswordByEmail($dbConn, $httpEmail, $httpPassword) {
+
+        $dbQuery = "SELECT password FROM users WHERE email=:email AND password=:password";
+
+        $preparedStatement = $dbConn->prepare($dbQuery);
+        $preparedStatement->bindParam(':email', $httpEmail);
+        $preparedStatement->bindParam(':password', $httpPassword);
+        $preparedStatement->execute();
+
+        $queryResult = $preparedStatement->fetch();
+        $dbPassword = $queryResult[0];
+
+        return $dbPassword;
+    }
+
+    //Get User Password from DB via Email
+    function ft_getUserDBPasswordByUsername($dbConn, $httpUsername, $httpPassword) {
+
+        $dbQuery = "SELECT password FROM users WHERE username=:username AND password=:password";
+
+        $preparedStatement = $dbConn->prepare($dbQuery);
+        $preparedStatement->bindParam(':username', $httpUsername);
+        $preparedStatement->bindParam(':password', $httpPassword);
+        $preparedStatement->execute();
+
+        $queryResult = $preparedStatement->fetch();
+        $dbPassword = $queryResult[0];
+
+        return $dbPassword;
+    }
 ?>

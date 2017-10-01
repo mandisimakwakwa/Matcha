@@ -15,8 +15,9 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
         $dbConnName = $_SESSION['dbConnName'];
 
         //HTTP Login Sessions
-        $_SESSION['httpLoginEmail'] = "#";
+        $_SESSION['httpLoginUsernameEmail'] = "#";
         $_SESSION['httpLoginPassword'] = "#";
+        $_SESSION['confirmLogin'] = "0";
 
         //Misc Sessions
         $_SESSION['errorLog'] = "#";
