@@ -45,7 +45,7 @@ function ft_loginScrollButton() {
     $(document).ready(function (){
         $("#loginScrollButtonID").click(function (){
             $('html, body').animate({
-                scrollTop: $(".indexPage2DivClass").offset().top
+                scrollTop: $(".pageTwoDivClass").offset().top
             }, 2000);
         });
     });
@@ -67,7 +67,7 @@ function ft_signUpScrollButton() {
     $(document).ready(function (){
         $("#signUpScrollButtonID").click(function (){
             $('html, body').animate({
-                scrollTop: $(".indexPage2DivClass").offset().top
+                scrollTop: $(".pageTwoDivClass").offset().top
             }, 2000);
         });
     });
