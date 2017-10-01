@@ -55,7 +55,36 @@
             /* Animation */
         }
 
-        .radioToggleClass {
+        .biographyClass {
+
+            /* Display Layer */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* Dimensions */
+            min-height: 40vh;
+
+            /* Text Styles */
+            /* Element Styles */
+            /* Animation */
+        }
+
+        .filterMenuFormClass {
+        }
+
+        select option {
+
+            width: 30vw;
+            padding: 5px;
+            text-align: center;
+            letter-spacing: 2.5px;
+            background-color: #3d2b24;
+            border: none;
+        }
+
+
+.radioToggleClass {
 
             /* Display Layer */
             display: flex;

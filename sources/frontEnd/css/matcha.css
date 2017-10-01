@@ -234,33 +234,23 @@
                 /* Element Styles */
                 /* Animation */
             }
-/*
-.cardClass {
 
-    !* Display Layer *!
-    display: flex;
-    justify-content: center;
-    align-items: center;
+            .infoCardClass {
 
-    !* Dimensions *!
-    width: 20vw;
-    height: 40vh;
-    margin: 10px;
+                /* Display Layer */
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-    !* Text Styles *!
-    text-align: center;
-    letter-spacing: 5px;
-    text-transform: uppercase;
+                /* Dimensions */
+                width: 20vw;
+                height: 35vh;
+                margin: 10px;
 
-    !* Element Styles *!
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 15px;
-
-    !* Animation *!
-}
-*/
-
+                /* Text Styles */
+                /* Element Styles */
+                /* Animation */
+            }
 /*====================================================================================================================*/
 /*
     //==========================\\

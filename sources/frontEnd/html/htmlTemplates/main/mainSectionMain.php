@@ -175,10 +175,247 @@
 
 <div class="pageThreeDivClass">
 
-    Page Three
+    <div class="paneWideDivClass">
+
+        <div class="flexOneClass paddingFillerClass">
+
+            <i class="fa fa-bars paddingFillerClass w3-hover-theme"
+               onclick="ft_filterMenuButton()"
+            ></i>
+            <div class="w3-hover-theme paddingFillerClass" onclick="ft_notificationsPageScrollButton()"
+            >
+
+                <i class="fa fa-bell"></i>
+
+                <b>4</b>
+            </div>
+        </div>
+
+        <div class="fillerClass"></div>
+
+        <div class="flexOneClass">
+
+            <div class="buttonClass darkButtonClass w3-hover-theme"
+                 onclick="ft_signOutButton()"
+            >
+
+                Sign Out
+            </div>
+        </div>
+    </div>
+
+    <h3><b>Recommendations</b></h3>
+
+    <div class="flexOneClass alignContentCenterClass">
+
+        <div class="filterMenuClass"
+             id="filterMenuID"
+             style="display: none;"
+        >
+
+            <form class="filterMenuFormClass w3-theme-d2 textLightBackgroundClass alignContentCenterClass columnClass">
+
+                <div class="rowClass">
+
+                    <div class="paddingFillerClass">Order By:</div>
+                    <select class="w3-theme-d2" required>
+
+                        <option value="ageAsc">Age Asc</option>
+                        <option value="ageDesc">Age Desc</option>
+                        <option value="frAsc">FR Asc</option>
+                        <option value="frDesc">FR Desc</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="rowClass">
+
+                    <div class="paddingFillerClass">Display Only:</div>
+                    <select class="w3-theme-d2" required>
+
+                        <option value="male">
+
+                            Male
+                        </option>
+                        <option value="female">Female
+                        </option>
+                        <option value="both">Both</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <hr>
+
+                <div class="columnClass alignContentCenterClass">
+
+                    <label><h4>Age Difference</h4></label>
+                    <input type="text"
+                           placeholder="Min 18"
+                           class="w3-theme-d2"
+                    >
+                    <input type="text"
+                           placeholder="Max 250"
+                           class="w3-theme-d2"
+                    >
+                </div>
+                <hr>
+                <div class="columnClass alignContentCenterClass">
+
+                    <label>Search Tag</label>
+                    <input type="text"
+                           class="w3-theme-d2"
+                           placeholder="#paintbrush"
+                    >
+                </div>
+
+                <hr>
+
+                <div class="buttonClass w3-theme-d2 w3-hover-theme paddingFillerClass">
+
+                    Go
+                </div>
+            </form>
+        </div>
+
+        <i class="fa fa-angle-left w3-hover-theme paddingFillerClass"
+           style="font-size: 48px; border-top-left-radius: 10px"
+        ></i>
+
+        <div class="infoCardClass columnClass">
+
+            <div class="rowClass">
+
+                <div class="paddingFillerClass">2.9</div>
+                <i class="fa fa-close paddingFillerClass"
+                ></i>
+            </div>
+
+            <div class="columnClass">
+
+                <div class="smallCardClass w3-theme-d2 w3-hover-theme">
+
+                    Card One
+                </div>
+
+                <div class="rowClass alignContentCenterClass paddingFillerClass">
+
+                    <div class="paddingFillerClass">
+
+                        25
+                    </div>
+
+                    <i class="fa fa-male paddingFillerClass"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="infoCardClass columnClass">
+
+            <div class="rowClass">
+
+                <div class="paddingFillerClass">1.2</div>
+                <i class="fa fa-close paddingFillerClass"></i>
+            </div>
+
+            <div class="columnClass">
+
+                <div class="smallCardClass w3-theme-d2 w3-hover-theme">
+
+                    Card Two
+                </div>
+
+                <div class="rowClass alignContentCenterClass paddingFillerClass">
+
+                    <div class="paddingFillerClass">
+
+                        21
+                    </div>
+
+                    <i class="fa fa-female paddingFillerClass"></i>
+                </div>
+            </div>
+        </div>
+
+        <i class="fa fa-angle"></i>
+
+        <div class="infoCardClass columnClass">
+
+            <div class="rowClass">
+
+                <div class="paddingFillerClass">4.8</div>
+                <i class="fa fa-close paddingFillerClass"></i>
+            </div>
+
+            <div class="columnClass">
+
+                <div class="smallCardClass w3-theme-d2 w3-hover-theme">
+
+                    Card Three
+                </div>
+
+                <div class="rowClass alignContentCenterClass paddingFillerClass">
+
+                    <div class="paddingFillerClass">
+
+                        27
+                    </div>
+
+                    <i class="fa fa-female paddingFillerClass"></i>
+                </div>
+            </div>
+        </div>
+
+        <i class="fa fa-angle-right w3-hover-theme paddingFillerClass"
+           style="font-size: 48px; border-top-right-radius: 10px"
+        ></i>
+    </div>
 </div>
 
-<div class="pageFourDivClass">
+<div class="pageFourDivClass textDarkBackgroundClass">
 
-    Page Four
+    <div class="paneWideDivClass">
+
+        <div class="flexOneClass paddingFillerClass">
+
+            <i class="fa fa-home paddingFillerClass w3-hover-theme"></i>
+            <div class="w3-hover-theme paddingFillerClass" onclick="ft_notificationsPageScrollButton()"
+            >
+
+                <i class="fa fa-bell"></i>
+
+                <b>4</b>
+            </div>
+        </div>
+
+        <div class="fillerClass"></div>
+
+        <div class="flexOneClass">
+
+            <div class="buttonClass darkButtonClass w3-hover-theme"
+                 onclick="ft_signOutButton()"
+            >
+
+                Sign Out
+            </div>
+        </div>
+    </div>
+
+    <div class="flexOneClass paddingFillerClass"><h3><b>Biography</b></h3></div>
+
+    <hr/>
+
+    <div class="flexOneClass biographyClass rowClass statusClass">
+
+        <div class="paddingFillerClass">
+
+            I am a drifter in space time code.
+        </div>
+        <label class="paddingFillerClass">
+
+            <i class="fa fa-edit w3-hover-theme"></i>
+        </label>
+    </div>
+
+    <div class="paneWideDivClass flexOneClass w3-theme-d5 alignBottomClass">
+
+        Author : mmakwakw
+    </div>
 </div>
