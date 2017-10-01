@@ -44,12 +44,18 @@
 
     <div class="paneNarrowDivClass loginFormDivClass flexOneClass w3-theme-d2 columnClass slightlyOpaqueClass">
 
-        <div class="googleLoginButtonClass w3-hover-theme"
-             onclick="ft_googleSignInButton()"
-        >
+        <?php
 
-            Google
-        </div>
+            if (isset($authUrl)) {
+
+                echo "<a class='googleLoginButtonClass textDarkBackgroundClass'
+                         style='text-transform: none; text-decoration: none;'
+                         href='".$authUrl. "'>
+                      
+                         Google
+                      </a>";
+            }
+        ?>
 
         <div class="paddingFillerClass">OR</div>
 

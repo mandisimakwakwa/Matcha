@@ -170,6 +170,11 @@
         /* Animation */
     }
 
+        .googleLoginButtonClass:hover {
+
+            background-color: #991700;
+        }
+
     .loginButtonClass {
 
         /* Display Layer */
