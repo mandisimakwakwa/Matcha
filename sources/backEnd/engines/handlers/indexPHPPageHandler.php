@@ -30,10 +30,6 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
 
                 ft_sessionStateLogin($dbConn, $decodedHTTPJSON);
                 break;
-            /*default :
-
-                ft_sessionStateError();
-                break;*/
         }
 
 //    ft_arrayDebugger($_SESSION);

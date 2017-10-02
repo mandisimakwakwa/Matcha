@@ -67,8 +67,5 @@ function ft_responseHandler(response, switchNode) {
                 ft_loginCase(jsonResponse);
                 break;
         }
-    } else {
-
-        console.log("No Responses Recieved!");
     }
 }

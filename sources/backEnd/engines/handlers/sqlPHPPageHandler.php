@@ -144,7 +144,8 @@
         $preparedStatement->execute();
 
         $queryResult = $preparedStatement->fetch();
-        $dbUsername = ucfirst(strtolower($queryResult[0]));
+        $dbUsername = $queryResult[0];
+        //        $dbUsername = ucfirst(strtolower($queryResult[0]));
 
         return $dbUsername;
     }

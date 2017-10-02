@@ -12,8 +12,6 @@ function ft_sendHTTPRequest(httpRequestAction, httpPostActionParams, getFormPara
 
     xhttpRequest.onreadystatechange = function () {
 
-        // console.log(response);
-
         if (this.readyState === 4 && this.status === 200) {
 
             var response = xhttpRequest.response;

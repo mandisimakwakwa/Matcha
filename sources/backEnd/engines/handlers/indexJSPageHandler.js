@@ -102,3 +102,18 @@ function ft_sendLoginHTTPRequest() {
 
     ft_sendHTTPRequest("POST", params, "", handler, switchNode);
 }
+
+function ft_loginCase(jsonResponse) {
+
+    var confirmLogin = jsonResponse.confirmLogin;
+
+    if (confirmLogin == "1") {
+
+        var destPage = "main";
+
+        ft_redirectController(destPage);
+    } else {
+
+        alert("Login Failed. Please Check Email or Username and Password!");
+    }
+}

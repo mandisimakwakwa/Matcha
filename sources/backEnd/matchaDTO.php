@@ -45,7 +45,6 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
         $_SESSION['confirmLogin'] = "1";
 
         //Retrieve User From DB
-
         //Set DB Sessions
 
         $httpLoginPassword = $_SESSION['httpLoginPassword'];
@@ -61,12 +60,12 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
             $httpLoginUsername = $_SESSION['httpLoginUsernameEmail'];
             $_SESSION['userDBEmail'] = ft_getUserDBEmailByUsername($dbConn, $httpLoginUsername, $httpLoginPassword);
             $_SESSION['userDBUsername'] = ft_getUserDBUsernameByUsername($dbConn, $httpLoginUsername, $httpLoginPassword);
-            $_SESSION['userDBPassword'] = ft_getUserDBPassword($dbConn, $httpLoginUsername, $httpLoginPassword);
+            $_SESSION['userDBPassword'] = ft_getUserDBPasswordByUsername($dbConn, $httpLoginUsername, $httpLoginPassword);
         }
 
+        ft_arrayDebugger($_SESSION);
         //Session Set Error Log
-        $_SESSION['errorLog'] = "Error Login and Password Don't Match";
-
+//        $_SESSION['errorLog'] = "Error Login and Password Don't Match";
 
         if ((($_SESSION['userDBEmail'] == $httpLoginEmail) || ($_SESSION['userDBUsername'] == $httpLoginUsername)) && ($_SESSION['userDBPassword'] == $httpLoginPassword)) {
 
@@ -100,34 +99,7 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
             case "login" :
 
                 $jsonObj = ft_prepLoginJSON($sourceContent);
-                break;/*
-            case "imageSave" :
-
-                $jsonObj = ft_imageSaveJSON($sourceContent);
                 break;
-            case "imageMerge" :
-
-                $jsonObj = ft_imageMergeJSON($sourceContent);
-                break;
-            case "imageUpload" :
-
-                $jsonObj = ft_imageUploadJSON($sourceContent);
-                break;
-            case "imageComments" :
-
-                $jsonObj = ft_imageCommentsJSON($sourceContent);
-                break;
-            case "errorLog" :
-
-                $jsonObj = ft_sendErrorJSON($sourceContent);
-                break;
-            case "errorUserNull" :
-
-                $jsonObj = ft_sendErrorJSON($sourceContent);
-                break;
-
-            I really tried.
-        */
         }
 
         if ($jsonObj) {
@@ -136,7 +108,7 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
             echo $jsonEncode;
         } else {
 
-            echo "Hello";
+            echo "JSON error from ft_sendJSON";
         }
     }
 
