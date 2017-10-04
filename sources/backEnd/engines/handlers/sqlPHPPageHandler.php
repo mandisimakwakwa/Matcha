@@ -65,8 +65,10 @@
             //Regular Spacing Not Implemented Due to nature of query.
             $dbQuery = "CREATE TABLE IF NOT EXISTS users (
                         userID INT(8) AUTO_INCREMENT,
+                        firstname VARCHAR (72),
+                        lastname VARCHAR (72),
                         username VARCHAR(30),
-                        email VARCHAR(72) NOT NULL,
+                        email VARCHAR(72),
                         password VARCHAR(66),
                         PRIMARY KEY (userID),
                         UNIQUE (email, username));";
@@ -76,6 +78,9 @@
             ft_autoIncrementSet($dbConn);
 
             return $pass;
+        } else {
+
+            return false;
         }
     }
 
@@ -180,5 +185,23 @@
         $dbPassword = $queryResult[0];
 
         return $dbPassword;
+    }
+
+    //Sign Up User to users table
+    function ft_signUp($dbConn, $httpSignUpFirstname, $httpSignUpLastname, $httpSignUpUsername, $httpSignUpEmail, $httpSignUpPassword) {
+
+        /*Email Validation*/
+
+        //Insert user to table
+        $dbQuery = "INSERT INTO users (firstname, lastname, username, email, password) VALUES (:firstname, :lastname, :username, :email, :password)";
+
+        $preparedStatement = $dbConn->prepare($dbQuery);
+        $preparedStatement->bindParam(':firstname', $httpSignUpFirstname);
+        $preparedStatement->bindParam(':lastname', $httpSignUpLastname);
+        $preparedStatement->bindParam(':username', $httpSignUpUsername);
+        $preparedStatement->bindParam(':email', $httpSignUpEmail);
+        $preparedStatement->bindParam(':password', $httpSignUpPassword);
+
+        $preparedStatement->execute();
     }
 ?>

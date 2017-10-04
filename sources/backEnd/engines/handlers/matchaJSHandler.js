@@ -48,13 +48,16 @@ function ft_submitHandler(sourcePage) {
     if (source == "login") {
 
         ft_sendLoginHTTPRequest();
-    } /*else if (sourcePage == "signUp") {
+    } else if (source == "signUp") {
 
         ft_sendSignUpHTTPRequest();
-    }*/
+    }
 }
 
 function ft_responseHandler(response, switchNode) {
+
+    var response = response;
+    var switchNode = switchNode;
 
     if (response) {
 
@@ -66,6 +69,37 @@ function ft_responseHandler(response, switchNode) {
 
                 ft_loginCase(jsonResponse);
                 break;
+            case "signUp":
+
+                ft_signUpCase(jsonResponse);
+                break;
+        }
+    } else {
+
+        console.log("No Responses Recieved.");
+    }
+}
+
+function ft_passwordCheck(passwordOne, passwordTwo) {
+
+    var state = 0;
+
+    var passOne = passwordOne;
+    var passTwo = passwordTwo;
+
+    if (passOne == passTwo) {
+
+        var passwordLength = passOne.length;
+        var passwordComplexityCheck = /(?=.*[0-9])(?=.*[a-z])/;
+
+        if (passwordLength > 7) {
+
+            if (passwordComplexityCheck.test(passOne)) {
+
+                state = 1;
+            }
         }
     }
+
+    return state;
 }

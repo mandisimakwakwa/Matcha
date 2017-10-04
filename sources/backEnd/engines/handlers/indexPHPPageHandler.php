@@ -22,10 +22,10 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
 
         switch ($sessionState) {
 
-            /*case "REGISTER" :
+            case "SIGNUP" :
 
-                ft_sessionStateRegister($dbConn, $decodedHTTPJSON);
-                break;*/
+                ft_sessionStateSignUp($dbConn, $decodedHTTPJSON);
+                break;
             case "LOGIN" :
 
                 ft_sessionStateLogin($dbConn, $decodedHTTPJSON);

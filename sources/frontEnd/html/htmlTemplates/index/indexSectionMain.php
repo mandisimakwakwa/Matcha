@@ -106,7 +106,7 @@
                        placeholder="Please Enter First Name"
                        id="signUpFirstNameInputID"
                        class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
-                />
+                       required/>
 
                 <br/>
 
@@ -122,7 +122,7 @@
                        placeholder="Please Enter Username"
                        id="signUpUsernameInputID"
                        class="w3-theme-l1 w3-hover-text-theme"
-                       required/>
+                />
             </form>
         </div>
 
@@ -132,7 +132,7 @@
 
                 <h3><b>2. Login Credentials:</b></h3>
             </label>
-            <form id="signUpFormID"
+            <form id="signUpFormIDTwo"
                   class="signUpFormClass columnClass"
                   method="post"
             >
@@ -141,7 +141,7 @@
                        placeholder="Please Enter Email"
                        id="signUpEmailInputID"
                        class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
-                />
+                required/>
 
                 <br/>
 

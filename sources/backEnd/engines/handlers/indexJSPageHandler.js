@@ -77,7 +77,9 @@ function ft_signUpScrollButton() {
 
 function ft_signUpButton() {
 
-    console.log("Sign Up Button Pressed");
+    var sourcePage = "signUp";
+
+    ft_submitHandler(sourcePage);
 }
 
 function ft_googleSignUpButton() {
@@ -103,7 +105,59 @@ function ft_sendLoginHTTPRequest() {
     ft_sendHTTPRequest("POST", params, "", handler, switchNode);
 }
 
+function ft_sendSignUpHTTPRequest() {
+
+    var httpSignUpFirstName = document.forms['signUpFormID']['signUpFirstNameInputID'].value;
+
+    var httpSignUpLastName = document.forms['signUpFormID']['signUpLastNameInputID'].value;
+
+    var httpSignUpUsername = document.forms['signUpFormID']['signUpUsernameInputID'].value;
+
+    var httpSignUpEmail = document.forms['signUpFormIDTwo']['signUpEmailInputID'].value;
+
+    var httpSignUpPassword = document.forms['signUpFormIDTwo']['signUpPasswordInputID'].value;
+
+    var httpSignUpValidatePassword = document.forms['signUpFormIDTwo']['signUpValidatePasswordInputID'].value;
+
+    /*if (!httpSignUpFirstName && !httpSignUpLastName && !httpSignUpEmail) {
+
+        alert("Please check if Firstname, Lastname & Email fields have been filled in.");
+    }*/
+
+    //Session State is Sign up
+    var params = {'httpSignUpFirstName' : httpSignUpFirstName, 'httpSignUpLastName' : httpSignUpLastName, 'httpSignUpUsername' : httpSignUpUsername, 'httpSignUpEmail' : httpSignUpEmail, 'httpSignUpPassword' : httpSignUpPassword, 'httpSignUpValidatePassword' : httpSignUpValidatePassword, 'SessionState' : "SIGNUP"};
+
+    var handler = "sources/backEnd/engines/handlers/indexPHPPageHandler.php";
+
+    var switchNode = "signUp";
+
+    var passwordCheck = ft_passwordCheck(httpSignUpPassword, httpSignUpValidatePassword);
+
+    if (passwordCheck) {
+
+        ft_sendHTTPRequest("POST", params, "", handler, switchNode);
+    } else {
+
+        alert("Your Password must contain at minimum 8 Characters and also contain at least a Number.");
+    }
+}
+
 function ft_loginCase(jsonResponse) {
+
+    var confirmLogin = jsonResponse.confirmLogin;
+
+    if (confirmLogin == "1") {
+
+        var destPage = "main";
+
+        ft_redirectController(destPage);
+    } else {
+
+        alert("Login Failed. Please Check Email or Username and Password!");
+    }
+}
+
+function ft_signUpCase(jsonResponse) {
 
     var confirmLogin = jsonResponse.confirmLogin;
 

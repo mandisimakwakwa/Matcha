@@ -4,6 +4,9 @@
 $projectRoot = substr(getcwd(), 0, strpos(getcwd(), "sources"));
 require $projectRoot . 'sources/backEnd/engines/controllers/relativePathController.php';
 
+    //Session Creator
+    session_start();
+
     function ft_getCurrentFilename() {
 
         $Rawfilename =  basename($_SERVER['PHP_SELF']);
@@ -63,7 +66,6 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
             $_SESSION['userDBPassword'] = ft_getUserDBPasswordByUsername($dbConn, $httpLoginUsername, $httpLoginPassword);
         }
 
-        ft_arrayDebugger($_SESSION);
         //Session Set Error Log
 //        $_SESSION['errorLog'] = "Error Login and Password Don't Match";
 
@@ -91,6 +93,44 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
         }
     }
 
+    function ft_sessionStateSignUp($dbConn, $decodedHTTPJSON) {
+
+        //Set Sessions
+        $_SESSION['httpSignUpFirstName'] = ft_validator($decodedHTTPJSON['httpSignUpFirstName']);
+        $_SESSION['httpSignUpLastName'] = ft_validator($decodedHTTPJSON['httpSignUpLastName']);
+        $_SESSION['httpSignUpUsername'] = ft_validator($decodedHTTPJSON['httpSignUpUsername']);
+        $_SESSION['httpSignUpEmail'] = ft_validator($decodedHTTPJSON['httpSignUpEmail']);
+        $_SESSION['httpSignUpPassword'] = hash("sha256", ft_validator($decodedHTTPJSON['httpSignUpPassword']));
+        $_SESSION['confirmLogin'] = "1";
+
+        //Variables to store into users Table
+        $httpSignUpFirstname = $_SESSION['httpSignUpFirstName'];
+        $httpSignUpLastname = $_SESSION['httpSignUpLastName'];
+        $httpSignUpUsername = $_SESSION['httpSignUpUsername'];
+        $httpSignUpEmail = $_SESSION['httpSignUpEmail'];
+        $httpSignUpPassword = $_SESSION['httpSignUpPassword'];
+
+        //Assign User HTTP values to users Table
+        ft_signUp($dbConn, $httpSignUpFirstname, $httpSignUpLastname, $httpSignUpUsername, $httpSignUpEmail, $httpSignUpPassword);
+
+        //Log Successful Sign Up in.
+            //Set DB Sessions
+            $_SESSION['userDBEmail'] = ft_getUserDBEmailByEmail($dbConn, $httpSignUpEmail, $httpSignUpPassword);
+            $_SESSION['userDBPassword'] = ft_getUserDBPasswordByEmail($dbConn, $httpSignUpEmail, $httpSignUpPassword);
+
+            //Validate User
+            if (($httpSignUpEmail == $_SESSION['userDBEmail']) && ($httpSignUpPassword == $_SESSION['userDBPassword'])) {
+
+                $switchNode = "signUp";
+                $confirmLoginJSONValue = $_SESSION['confirmLogin'];
+
+                ft_sendJSON($confirmLoginJSONValue, $switchNode);
+            } else {
+
+                echo "Error Send JSON not called.";
+            }
+    }
+
     //JSON Prep
     function ft_sendJSON($sourceContent, $switchNode) {
 
@@ -99,6 +139,9 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
             case "login" :
 
                 $jsonObj = ft_prepLoginJSON($sourceContent);
+                break;
+            case "signUp" :
+                $jsonObj = ft_prepSignUpJSON($sourceContent);
                 break;
         }
 
@@ -113,6 +156,14 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
     }
 
     function ft_prepLoginJSON($sourceContent) {
+
+        $confirmLoginJSONIndex = "confirmLogin";
+        $jsonObj = array($confirmLoginJSONIndex => $sourceContent);
+
+        return $jsonObj;
+    }
+
+    function ft_prepSignUpJSON($sourceContent) {
 
         $confirmLoginJSONIndex = "confirmLogin";
         $jsonObj = array($confirmLoginJSONIndex => $sourceContent);
