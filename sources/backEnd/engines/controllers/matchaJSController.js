@@ -19,11 +19,11 @@ function ft_redirectController(destPage) {
 
         case "main":
 
-            window.location.href = "sources/frontEnd/html/htmlLayouts/main.php";
+            window.location.href = "../../../frontEnd/html/main.php";
             break;
         case "index":
 
-            window.location.href = "../../../../index.php";
+            window.location.href = "../../../index.php";
             break;
     }
 }

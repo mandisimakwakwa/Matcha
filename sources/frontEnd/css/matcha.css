@@ -20,11 +20,29 @@
         padding: 0px 0px; !important;
 
         /* Text Styles */
-        color: #ececec
+        color: #ececec;
 
         /* Element Styles */
         /* Animation */
     }
+
+        .modalClass {
+
+            /* Display Layers */
+            display: none;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+
+            /* Dimensions */
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+
+            /* Text Styles */
+            /* Element Styles */
+            /* Animation */
+        }
 /*====================================================================================================================*/
 /*
     //==========================\\

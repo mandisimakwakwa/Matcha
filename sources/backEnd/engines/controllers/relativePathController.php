@@ -24,15 +24,15 @@
 
     //HTML Markup Controllers
         //HTML Templates Level 1
-        $headerTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/header.php";
-        $sectionMainTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/sectionMain.php";
-        $sectionAsideTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/sectionAside.php";
-        $footerTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/footer.php";
+        $headerTemplate = ServerRoot . "sources/frontEnd/html/templates/header.php";
+        $sectionMainTemplate = ServerRoot . "sources/frontEnd/html/templates/sectionMain.php";
+        $sectionAsideTemplate = ServerRoot . "sources/frontEnd/html/templates/sectionAside.php";
+        $footerTemplate = ServerRoot . "sources/frontEnd/html/templates/footer.php";
             //HTML Templates Level 2
-            $indexSectionMainTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/index/indexSectionMain.php";
-            $mainSectionMainTemplate = ServerRoot . "sources/frontEnd/html/htmlTemplates/main/mainSectionMain.php";
+            $indexSectionMainTemplate = ServerRoot . "sources/frontEnd/html/templates/pageTemplates/indexSectionMain.php";
+            $mainSectionMainTemplate = ServerRoot . "sources/frontEnd/html/templates/pageTemplates/mainSectionMain.php";
 
-        $indexLayout = ServerRoot . "sources/frontEnd/html/htmlLayouts/indexLayout.php";
-        $mainLayout = ServerRoot . "sources/frontEnd/html/htmlLayouts/mainLayout.php";
+        $indexLayout = ServerRoot . "sources/frontEnd/html/layouts/indexLayout.php";
+        $mainLayout = ServerRoot . "sources/frontEnd/html/layouts/mainLayout.php";
         $unitTestFailTemplate = ServerRoot . "resources/TDD/unitTestFail.php";
 ?>

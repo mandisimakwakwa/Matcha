@@ -42,6 +42,11 @@ function ft_loginButton() {
     ft_submitHandler(sourcePage);
 }
 
+function ft_forgotPasswordButton() {
+
+    console.log("forgot password button pressed.");
+}
+
 function ft_loginScrollButton() {
 
     $(document).ready(function (){

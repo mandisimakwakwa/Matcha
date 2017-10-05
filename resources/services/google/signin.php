@@ -71,11 +71,11 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 $app->register(new Silex\Provider\SessionServiceProvider());
 
-// Initialize a session for the current user, and render index.html.
+// Initialize a session for the current user, and render templates.html.
 $app->get('/', function () use ($app) {
     $state = md5(rand());
     $app['session']->set('state', $state);
-    return $app['twig']->render('index.html', array(
+    return $app['twig']->render('templates.html', array(
         'CLIENT_ID' => CLIENT_ID,
         'STATE' => $state,
         'APPLICATION_NAME' => APPLICATION_NAME

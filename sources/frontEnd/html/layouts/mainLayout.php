@@ -11,23 +11,23 @@
         >
 
         <link rel="stylesheet"
-              href="../../../frontEnd/css/mainPage.css"
+              href="../../frontEnd/css/mainPage.css"
               type="text/css"
         >
         <link rel="stylesheet"
-              href="../../../frontEnd/css/matcha.css"
+              href="../../frontEnd/css/matcha.css"
               type="text/css"
         >
         <link rel="stylesheet"
-              href="../../../frontEnd/css/normalize.css"
+              href="../../frontEnd/css/normalize.css"
               type="text/css"
         >
         <link rel="stylesheet"
-              href="../../../frontEnd/css/boilerplate.css"
+              href="../../frontEnd/css/boilerplate.css"
               type="text/css"
         >
         <link rel="stylesheet"
-              href="../../../../resources/debuggers/cssDebugger.css"
+              href="../../../resources/debuggers/cssDebugger.css"
               type="text/css"
         >
 
@@ -38,24 +38,24 @@
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         >
 
-        <script src="../../../backEnd/engines/handlers/mainJSPageHandler.js"
+        <script src="../../backEnd/engines/handlers/mainJSPageHandler.js"
                 type="text/javascript"
         ></script>
-        <script src="../../../backEnd/engines/handlers/matchaJSHandler.js"
-                type="text/javascript"
-        ></script>
-
-        <script src="../../../backEnd/engines/controllers/matchaJSController.js"
-                type="text/javascript"
-        ></script>
-        <script src="../../../backEnd/engines/controllers/ajaxController.js"
-                type="text/javascript"
-        ></script>
-        <script src="../../../../resources/libs/jQuery/jquery-3.2.1.js"
+        <script src="../../backEnd/engines/handlers/matchaJSHandler.js"
                 type="text/javascript"
         ></script>
 
-        <script src="../../../../resources/debuggers/jsDebugger.js"
+        <script src="../../backEnd/engines/controllers/matchaJSController.js"
+                type="text/javascript"
+        ></script>
+        <script src="../../backEnd/engines/controllers/ajaxController.js"
+                type="text/javascript"
+        ></script>
+        <script src="../../../resources/libs/jQuery/jquery-3.2.1.js"
+                type="text/javascript"
+        ></script>
+
+        <script src="../../../resources/debuggers/jsDebugger.js"
                 type="text/javascript"
         ></script>
 

@@ -78,13 +78,23 @@
                    class="w3-theme-l1 paneDivDarkClass borderNoneClass w3-hover-text-theme"
                    required/>
 
-            <div class="buttonClass w3-theme-d4 w3-hover-theme cursorPointerToggleClass"
+            <div class="buttonClass paddingFillerClass w3-theme-d4 w3-hover-theme cursorPointerToggleClass"
                  onclick="ft_loginButton()"
             >
 
                 Login
             </div>
         </form>
+        <br/>
+        <div class="forgotPasswordClass w3-hover-theme"
+             onclick="ft_forgotPasswordButton()"
+        >
+
+            Forgot Password?
+        </div>
+
+        <div class="modalClass divDebugClassOne">
+        </div>
     </div>
 
     <div class="paddingLargeFillerClass"></div>
@@ -168,15 +178,6 @@
             >
 
                 Sign Up
-            </div>
-
-            <div>OR</div>
-
-            <div class="googleLoginButtonClass textDarkBackgroundClass w3-hover-theme"
-                 onclick="ft_googleSignUpButton()"
-            >
-
-                Google Sign Up
             </div>
         </div>
     </div>
