@@ -70,6 +70,7 @@
                         username VARCHAR(30),
                         email VARCHAR(72),
                         password VARCHAR(66),
+                        accountVerification INT NOT NULL DEFAULT 0,
                         PRIMARY KEY (userID),
                         UNIQUE (email, username));";
 
@@ -191,6 +192,7 @@
     function ft_signUp($dbConn, $httpSignUpFirstname, $httpSignUpLastname, $httpSignUpUsername, $httpSignUpEmail, $httpSignUpPassword) {
 
         /*Email Validation*/
+//        ft_sendVerificationEmail();
 
         //Insert user to table
         $dbQuery = "INSERT INTO users (firstname, lastname, username, email, password) VALUES (:firstname, :lastname, :username, :email, :password)";

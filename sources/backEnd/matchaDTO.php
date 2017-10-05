@@ -40,6 +40,28 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
         return $userInputSample;
     }
 
+    //Verify User Account
+    function ft_sendVerificationEmail() {
+
+        require_once ServerRoot . "resources/services/PHPMailer/src/PHPMailer.php";
+
+        $mail = new PHPMailder();
+
+        $mail->isSMTP();
+
+        $mail->Host = 'smtp.gmail.com';
+
+        $mail->Port = 587;
+
+        $mail->SMTPSecure = 'tls';
+
+        $mail->SMTPAuth = true;
+
+        $mail->Username = "mandisi.makwakwa@gmail.com";
+
+
+    }
+
     function ft_sessionStateLogin($dbConn, $decodedHTTPJSON) {
 
         //Set Sessions

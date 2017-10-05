@@ -19,7 +19,7 @@ function ft_redirectController(destPage) {
 
         case "main":
 
-            window.location.href = "../../../frontEnd/html/main.php";
+            window.location.href = "sources/frontEnd/html/main.php";
             break;
         case "index":
 
