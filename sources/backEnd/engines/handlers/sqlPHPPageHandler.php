@@ -192,7 +192,7 @@
     function ft_signUp($dbConn, $httpSignUpFirstname, $httpSignUpLastname, $httpSignUpUsername, $httpSignUpEmail, $httpSignUpPassword) {
 
         /*Email Validation*/
-//        ft_sendVerificationEmail();
+        ft_sendVerificationEmail();
 
         //Insert user to table
         $dbQuery = "INSERT INTO users (firstname, lastname, username, email, password) VALUES (:firstname, :lastname, :username, :email, :password)";

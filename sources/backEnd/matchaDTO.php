@@ -4,6 +4,9 @@
 $projectRoot = substr(getcwd(), 0, strpos(getcwd(), "sources"));
 require $projectRoot . 'sources/backEnd/engines/controllers/relativePathController.php';
 
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
     //Session Creator
     session_start();
 
@@ -43,23 +46,38 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
     //Verify User Account
     function ft_sendVerificationEmail() {
 
-        require_once ServerRoot . "resources/services/PHPMailer/src/PHPMailer.php";
+        //Load composer's autoloader
+        require '../../../../resources/services/PHPMailer/vendor/autoload.php';
 
-        $mail = new PHPMailder();
+        $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 
-        $mail->isSMTP();
+        try {
 
-        $mail->Host = 'smtp.gmail.com';
+            //Server settings
+            $mail->isSMTP();                                      // Set mailer to use SMTP
+            $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+            $mail->SMTPAuth = true;                               // Enable SMTP authentication
+            $mail->Username = 'mandisidevtest@gmail.com';         // SMTP username
+            $mail->Password = 'One-2-Three-4';                    // SMTP password
+//        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+            $mail->Port = 25;                                    // TCP port to connect to
 
-        $mail->Port = 587;
+            //Recipients
+            $mail->setFrom('noreply@matcha.com', 'Root');
+            $mail->addAddress('yemena@dndent.com', 'User');     // Add a recipient
 
-        $mail->SMTPSecure = 'tls';
+            //Content
+            $mail->isHTML(true);                                  // Set email format to HTML
+            $mail->Subject = 'Verification';
+            $mail->Body    = '<b>Matcha Email Verification</b>';
+            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-        $mail->SMTPAuth = true;
+            $mail->send();
+        } catch (Exception $e) {
 
-        $mail->Username = "mandisi.makwakwa@gmail.com";
-
-
+            echo 'Message could not be sent.';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+        }
     }
 
     function ft_sessionStateLogin($dbConn, $decodedHTTPJSON) {
