@@ -15,4 +15,14 @@
             include $mainSectionMainTemplate;
         }
     ?>
+
+    <div class="modalClass divDebugClassThree"
+         id="loadingPageContainerID"
+    >
+
+        <div class="modalContentClass">
+
+            <i class="fa fa-spinner"></i>
+        </div>
+    </div>
 </section>

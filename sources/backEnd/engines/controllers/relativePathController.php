@@ -32,6 +32,9 @@
             $indexSectionMainTemplate = ServerRoot . "sources/frontEnd/html/templates/pageTemplates/indexSectionMain.php";
             $mainSectionMainTemplate = ServerRoot . "sources/frontEnd/html/templates/pageTemplates/mainSectionMain.php";
 
+            //Other Templates
+            $accountVerificationTemplate = ServerRoot . "sources/frontEnd/html/templates/pageTemplates/accountVerification.php";
+
         $indexLayout = ServerRoot . "sources/frontEnd/html/layouts/indexLayout.php";
         $mainLayout = ServerRoot . "sources/frontEnd/html/layouts/mainLayout.php";
         $unitTestFailTemplate = ServerRoot . "resources/TDD/unitTestFail.php";

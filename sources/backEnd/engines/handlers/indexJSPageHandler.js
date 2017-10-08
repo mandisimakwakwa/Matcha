@@ -84,6 +84,7 @@ function ft_signUpButton() {
 
     var sourcePage = "signUp";
 
+    ft_pageLoading();
     ft_submitHandler(sourcePage);
 }
 

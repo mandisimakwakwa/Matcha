@@ -103,3 +103,19 @@ function ft_passwordCheck(passwordOne, passwordTwo) {
 
     return state;
 }
+
+function ft_pageLoading() {
+
+    $(function () {
+
+        $(document).ajaxStart(function () {
+
+            $("#loadingPageContainerID").show();
+        });
+
+        $(document).ajaxComplete(function () {
+
+            $("#loadingPageContainerID").hide();
+        });
+    });
+}

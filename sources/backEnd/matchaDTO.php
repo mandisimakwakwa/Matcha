@@ -50,6 +50,7 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
         require '../../../../resources/services/PHPMailer/vendor/autoload.php';
 
         $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+        $fetchAmendAddress = ServerRoot . "sources/backEnd/engines/handlers/emailPHPPageHandler.php";
 
         try {
 
@@ -64,12 +65,28 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
 
             //Recipients
             $mail->setFrom('noreply@matcha.com', 'Root');
-            $mail->addAddress('yemena@dndent.com', 'User');     // Add a recipient
+            $mail->addAddress('gupaparu@hostlaba.com', $_SESSION['userDBUsername']);     // Add a recipient
 
             //Content
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = 'Verification';
-            $mail->Body    = '<b>Matcha Email Verification</b>';
+            $mail->Body    = '
+                                <pre>
+                                    <b>Matcha Email Verification</b>
+                                    This email is to verifiy the following:
+                                        Username: Root
+                                        Email: root@admin.com
+                                        
+                                    If this is true and correct please click the verify my account button.
+                                     
+                                     <a href="../../../../sources/backEnd/engines/handlers/emailPHPPageHandler.php"
+                                        class="buttonClass w3-theme-l1"
+                                     >
+                                     
+                                        Verify
+                                     </a>
+                                </pre>
+                             ';
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
             $mail->send();

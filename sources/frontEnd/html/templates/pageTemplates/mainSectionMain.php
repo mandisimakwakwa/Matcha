@@ -119,7 +119,7 @@
 
         <div class="tagsDivClass w3-theme-d2">#Canvas <b> <i class="fa fa-close"></i></b></div>
 
-        <div class="buttonClass darkButtonClass w3-hover-theme"
+        <div class="buttonClass darkButtonClass w3-hover-theme cursorPointerToggleClass"
              onclick="ft_signOutButton()"
         >
 

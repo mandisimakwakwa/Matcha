@@ -206,4 +206,32 @@
 
         $preparedStatement->execute();
     }
+
+    function ft_getAccountVerification($dbConn, $username) {
+
+        $dbQuery = "SELECT accountVerification FROM users WHERE username=:username";
+
+        $preparedStatement = $dbConn->prepare($dbQuery);
+        $preparedStatement->bindParam(':username', $username);
+        $preparedStatement->execute();
+
+        $queryResult = $preparedStatement->fetch();
+        $dbAccountVerification = $queryResult[0];
+
+        return $dbAccountVerification;
+    }
+
+    function ft_updateAccountVerification($dbConn, $username) {
+
+        $accountVerificationPass = 1;
+
+        $dbQuery = "UPDATE users SET accountVerification=:accountVerification WHERE username=:username";
+
+        $preparedStatement = $dbConn->prepare($dbQuery);
+
+        $preparedStatement->bindParam(':accountVerification', $accountVerificationPass);
+        $preparedStatement->bindParam(':username', $username);
+
+        $preparedStatement->execute();
+    }
 ?>

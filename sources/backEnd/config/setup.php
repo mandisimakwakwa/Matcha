@@ -21,6 +21,7 @@ require $projectRoot . 'sources/backEnd/engines/controllers/relativePathControll
 
         //Misc Sessions
         $_SESSION['errorLog'] = "#";
+        $_SESSION['accountVerification'];
 
         //Header User Check
         $_SESSION['checkPageName'] = "#";

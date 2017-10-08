@@ -43,6 +43,23 @@
             /* Element Styles */
             /* Animation */
         }
+
+            .modalContentClass {
+
+                /* Display Layer */
+                display: flex;
+                position: fixed;
+                flex-flow: column;
+
+                /* Dimensions */
+                height: 70%;
+                width: 25%;
+                z-index: 25;
+
+                /* Text Styles */
+                /* Element Styles */
+                /* Animation */
+            }
 /*====================================================================================================================*/
 /*
     //==========================\\

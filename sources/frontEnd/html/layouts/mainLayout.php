@@ -1,3 +1,16 @@
+<?php
+
+//Setup Relative Root
+$projectRoot = substr(getcwd(), 0, strpos(getcwd(), "sources"));
+require $projectRoot . 'sources/backEnd/engines/controllers/relativePathController.php';
+
+
+    //Session Creator
+    session_start();
+
+    $accountVerification = ft_getAccountVerification($dbConn, $_SESSION['userDBUsername']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -67,7 +80,13 @@
 
             <?php
 
-                include $sectionMainTemplate;
+                if ($accountVerification) {
+
+                    include $sectionMainTemplate;
+                } else {
+
+                    include $accountVerificationTemplate;
+                }
             ?>
         </div>
     </body>
