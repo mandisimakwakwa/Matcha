@@ -5,7 +5,7 @@
     require_once ServerRoot . "resources/services/google/vendor/autoload.php";
     const CLIENT_ID = '1007816371578-7js0bfdnusmvtu2c9n77gbur3m40lk4k.apps.googleusercontent.com';
     const CLIENT_SECRET = 'Vx6l_nIRX3hlyLG-x9EmFqPT';
-    const REDIRECT_URI = 'http://localhost/Matcha/sources/frontEnd/html/main.php';
+    const REDIRECT_URI = 'http://localhost:8080/Matcha/sources/frontEnd/html/main.php';
 
     //Session Creator
     session_start();
